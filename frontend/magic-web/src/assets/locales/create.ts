@@ -8,6 +8,7 @@ import { normalizeLocale } from "@/utils/locale"
 // 自动引入所有嵌套的 json 文件 (懒加载模式)
 const zhCNModules = import.meta.glob("./zh_CN/**/*.json")
 const enUSModules = import.meta.glob("./en_US/**/*.json")
+const ruRUModules = import.meta.glob("./ru_RU/**/*.json")
 
 // 获取所有命名空间
 const allNamespaces = Object.keys(zhCNModules)
@@ -27,6 +28,10 @@ const adminZhCNModules = import.meta.glob(
 )
 const adminEnUSModules = import.meta.glob(
 	"../../../node_modules/@dtyq/magic-admin/dist/src/locales/en_US/**/*.json",
+	{ eager: true },
+)
+const adminRuRUModules = import.meta.glob(
+	"../../../node_modules/@dtyq/magic-admin/dist/src/locales/ru_RU/**/*.json",
 	{ eager: true },
 )
 
@@ -101,6 +106,9 @@ export function createI18nNext(defaultLang?: string) {
 					if (normalizedLng === "en_US") {
 						return getAdminResources(adminEnUSModules)[namespace]
 					}
+					if (normalizedLng === "ru_RU") {
+						return getAdminResources(adminRuRUModules)[namespace]
+					}
 				}
 
 				// 处理嵌套路径的情况 (例如 test/demo)
@@ -113,6 +121,12 @@ export function createI18nNext(defaultLang?: string) {
 					}
 					if (normalizedLng === "en_US") {
 						const resource = await getResource(enUSModules, namespace, normalizedLng)
+						if (resource) {
+							return resource
+						}
+					}
+					if (normalizedLng === "ru_RU") {
+						const resource = await getResource(ruRUModules, namespace, normalizedLng)
 						if (resource) {
 							return resource
 						}
@@ -153,6 +167,7 @@ export function createI18nNext(defaultLang?: string) {
 					const normalized = normalizeLocale(code)
 					if (normalized === "en_US") return ["en_US"]
 					if (normalized === "zh_CN") return ["zh_CN"]
+					if (normalized === "ru_RU") return ["ru_RU"]
 					return [DEFAULT_LOCALE]
 				},
 				interpolation: {

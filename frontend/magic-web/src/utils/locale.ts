@@ -12,6 +12,9 @@ export const normalizeLocale = (locale?: string): string => {
 		case "en":
 		case "en-US":
 			return SupportLocales.enUS
+		case "ru":
+		case "ru-RU":
+			return SupportLocales.ruRU
 		case "auto":
 			return normalizeLocale(window.navigator.language)
 		default:
@@ -74,6 +77,11 @@ export const getCurrentLang = <T extends string>(lang: "auto" | T): T => {
 			return SupportLocales.enUS as T
 		}
 
+		// Check for Russian language variants
+		if (browserLang.startsWith("ru")) {
+			return SupportLocales.ruRU as T
+		}
+
 		// Fallback to default locale for unsupported languages
 		return DEFAULT_LOCALE as T
 	}
@@ -84,6 +92,8 @@ export const getCurrentLang = <T extends string>(lang: "auto" | T): T => {
 		normalizedLang = SupportLocales.enUS as T
 	} else if (lang === "zh") {
 		normalizedLang = SupportLocales.zhCN as T
+	} else if (lang === "ru") {
+		normalizedLang = SupportLocales.ruRU as T
 	}
 
 	// For non-auto languages, validate if it's supported
@@ -98,4 +108,5 @@ export const getCurrentLang = <T extends string>(lang: "auto" | T): T => {
 const ANTD_LOCALE_LOADERS: Record<string, () => Promise<{ default: any }>> = {
 	[SupportLocales.zhCN]: () => import("antd/locale/zh_CN"),
 	[SupportLocales.enUS]: () => import("antd/locale/en_US"),
+	[SupportLocales.ruRU]: () => import("antd/locale/ru_RU"),
 }

@@ -4,7 +4,7 @@ import type { ThemeMode } from "antd-style"
  * @description 应用配置（国际化语言、主题、国际冠号）
  */
 export namespace Config {
-	export type LanguageValue = "en_US" | "zh_CN" | "auto"
+	export type LanguageValue = "en_US" | "zh_CN" | "ru_RU" | "auto"
 
 	/** 全局国际化语言选项 */
 	export interface LanguageOption {

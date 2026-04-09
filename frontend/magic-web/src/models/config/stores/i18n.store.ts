@@ -56,8 +56,8 @@ export class I18nStore {
 	setLanguages(languages: Config.LanguageOption[]) {
 		const supportedLanguages =
 			languages
-				// 目前只支持简体中文和英文
-				?.filter((lang) => ["zh_CN", "en_US"].includes(lang.locale))
+				// Open-source build currently exposes Chinese, English, and Russian.
+				?.filter((lang) => ["zh_CN", "en_US", "ru_RU"].includes(lang.locale))
 				?.map((lang) => {
 					return {
 						name: lang.name,

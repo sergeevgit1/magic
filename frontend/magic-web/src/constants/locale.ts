@@ -7,6 +7,7 @@ export const enum SupportLocales {
 	fallback = "default",
 	zhCN = "zh_CN",
 	enUS = "en_US",
+	ruRU = "ru_RU",
 }
 
-export const SUPPORT_LOCALES = [SupportLocales.enUS, SupportLocales.zhCN]
+export const SUPPORT_LOCALES = [SupportLocales.enUS, SupportLocales.zhCN, SupportLocales.ruRU]

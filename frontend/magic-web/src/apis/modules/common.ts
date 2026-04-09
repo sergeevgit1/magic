@@ -82,6 +82,16 @@ export const generateCommonApi = (fetch: HttpClient) => ({
 					translations: {
 						zh_CN: "英文",
 						en_US: "English",
+						ru_RU: "Английский",
+					},
+				},
+				{
+					name: "Русский",
+					locale: "ru_RU",
+					translations: {
+						zh_CN: "俄文",
+						en_US: "Russian",
+						ru_RU: "Русский",
 					},
 				},
 			],

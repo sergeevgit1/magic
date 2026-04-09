@@ -1,0 +1,127 @@
+{
+	"account": {
+		"create": "Добавить аккаунт"
+	},
+	"afterSecondsCan": "Повторная отправка будет доступна через {{seconds}} сек.",
+	"agree": "Принять и продолжить",
+	"agreementText": "Я прочитал(а) и согласен(на) с",
+	"and": "и",
+	"appleLogin": "Войти через Apple",
+	"appleLoginDescription": "Текущий Apple ID не привязан к аккаунту",
+	"appleLoginLoading": "Получаем данные Apple Login, пожалуйста, подождите...",
+	"appleLoginTip": "Если страница не отвечает, вернитесь на предыдущий шаг и войдите снова",
+	"authorizeCode": {
+		"label": "Код идентификации приватного развёртывания",
+		"placeholder": "Введите код идентификации приватного развёртывания"
+	},
+	"autoRegisterTip": "Для незарегистрированных пользователей аккаунт будет создан автоматически после подтверждения.",
+	"button": {
+		"cancel": "Отмена",
+		"confirm": "Подтвердить"
+	},
+	"copyright": "Copyright © 2023 Guangdong Lighthouse Engine Technology Co., Ltd. Все права защищены.",
+	"device": {
+		"app": "клиент",
+		"dingTalk": "DingTalk",
+		"unknown": "неизвестно"
+	},
+	"dingTalkLogin": "DingTalk",
+	"dingTalkTip": "Для входа отсканируйте QR-код в DingTalk.",
+	"email": {
+		"label": "Эл. почта",
+		"placeholder": "Введите эл. почту",
+		"required": "Введите корректный email",
+		"verificationCodeDesc": "Введите {{count}}-значный код, отправленный на {{email}}. Код действует {{minutes}} мин.",
+		"verificationCodeLengthRequired": "Неверный формат кода подтверждения",
+		"verificationCodeRequired": "Введите код подтверждения",
+		"verificationCodeSendSuccess": "Код подтверждения отправлен",
+		"verificationCodeTitle": "Введите код из письма",
+		"verificationFailed": "Проверка не пройдена",
+		"verificationSuccess": "Проверка успешна"
+	},
+	"emailLogin": "Email",
+	"enterVerificationCode": "Введите код подтверждения телефона",
+	"findPassword": "Восстановить пароль",
+	"googleLogin": "Войти через Google",
+	"hi": "👋 Привет, мой друг",
+	"invalidCode": "Неверный код подтверждения",
+	"invite": {
+		"cancel": "Остаться на китайском сайте",
+		"codeUsed": {
+			"cancel": "Отмена",
+			"content": "Этот инвайт-код уже использован. Продолжить?",
+			"continueLogin": "Продолжить",
+			"title": "Уведомление"
+		},
+		"confirm": "Перейти на международный сайт",
+		"content": "Ваш инвайт-код предназначен для международного сайта Super Magic. Вы будете автоматически перенаправлены..."
+	},
+	"larkLogin": "FeiShu",
+	"larkRedirectLogin": "Редирект FeiShu",
+	"larkTip": "Для входа отсканируйте QR-код в Lark.",
+	"login": "Войти",
+	"loginPrivateDeployment": "Приватный сервис",
+	"loginPublicDeployment": "SaaS",
+	"magicOrganizationSyncStep": {
+		"pleaseBindExistingAccount": "Пожалуйста, привяжите существующий аккаунт"
+	},
+	"nextStep": "Далее",
+	"otherLoginType": "ИЛИ",
+	"password": {
+		"hide": "Скрыть пароль",
+		"label": "Пароль",
+		"placeholder": "Введите пароль",
+		"show": "Показать пароль"
+	},
+	"passwordLogin": "Пароль",
+	"phone": {
+		"invalid": "Неверный формат номера телефона.",
+		"label": "Номер телефона",
+		"placeholder": "Введите номер телефона."
+	},
+	"pleaseSendTo": "Пожалуйста, введите и отправьте на",
+	"pleaseSendToEnd": "Введите {{count}}-значный код, отправленный на {{phone}}, код действует {{minutes}} мин.",
+	"prevStep": "Вернуться на предыдущий шаг",
+	"privacyPolicy": "Политика конфиденциальности",
+	"privateConfig": "Приватная конфигурация",
+	"reSendVerificationCode": "Отправить код повторно",
+	"readAndAgree": "Регистрируясь, вы соглашаетесь с нашими",
+	"refresh": "Обновить",
+	"registration": {
+		"closed": "Регистрация сейчас недоступна"
+	},
+	"sendVerificationCode": "Отправить код подтверждения",
+	"serviceAgreement": "Пользовательское соглашение",
+	"verification": {
+		"codeInput": "Ввод кода подтверждения",
+		"codeInvalid": "Неверный код подтверждения, введите снова"
+	},
+	"verificationCodeLogin": "Телефон",
+	"versionSwitch": {
+		"aria": {
+			"china": "Переключиться на китайскую версию",
+			"international": "Переключиться на международную версию"
+		},
+		"china": "Китай",
+		"international": "Международная"
+	},
+	"wechatAppLogin": "Вход через WeChat",
+	"wechatAppLoginConfigError": "Отсутствует конфигурация входа WeChat App",
+	"wechatOfficialAccount": {
+		"agreePolicy": "Пожалуйста, примите пользовательское соглашение",
+		"autoLogin": "Подпишитесь на официальный аккаунт WeChat для автоматического входа.",
+		"backToPrevious": "Вернуться на предыдущий шаг",
+		"bindPhone": "Привязать номер телефона",
+		"bindPhoneDescription": "Пожалуйста, привяжите номер телефона. Если номер не зарегистрирован, аккаунт будет создан и привязан автоматически.",
+		"bindPhoneTitle": "Текущий WeChat ещё не привязан к аккаунту.",
+		"cancelRegister": "Я передумал(а), отменить регистрацию.",
+		"codeInvalid": "Неверный код подтверждения",
+		"phoneAlreadyBound": "Этот номер уже привязан",
+		"qrCodeAlt": "Вход по QR-коду WeChat",
+		"qrCodeExpired": "QR-код не отсканирован или истёк",
+		"title": "Безопасный вход через WeChat"
+	},
+	"wechatOfficialAccountLogin": "WeChat",
+	"welcome": "Добро пожаловать в $t(common:platform.name)",
+	"welcomeLogin": "WeCom"
+}
