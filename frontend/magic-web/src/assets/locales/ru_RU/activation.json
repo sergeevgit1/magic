@@ -1,97 +1,97 @@
 {
 	"common": {
-		"error": "Operation failed, please try again",
-		"loading": "Processing..."
+		"error": "Операция не удалась, попробуйте снова",
+		"loading": "Обработка..."
 	},
 	"errors": {
-		"accountActivated": "Tips",
-		"accountActivatedContent": "Account activated, please return to home",
-		"missingParameters": "Missing required parameters",
-		"ok": "OK",
-		"returnHome": "Return to Home"
+		"accountActivated": "Подсказка",
+		"accountActivatedContent": "Аккаунт активирован, пожалуйста, вернитесь на главную",
+		"missingParameters": "Отсутствуют обязательные параметры",
+		"ok": "ОК",
+		"returnHome": "Вернуться на главную"
 	},
 	"profile": {
 		"button": {
-			"submit": "Confirm Submit"
+			"submit": "Подтвердить отправку"
 		},
 		"company": {
 			"license": {
-				"label": "Business License",
-				"numberPlaceholder": "Enter credit code",
-				"numberRequired": "Please enter license number",
-				"typeRequired": "Please select license type",
+				"label": "Лицензия компании",
+				"numberPlaceholder": "Введите регистрационный код",
+				"numberRequired": "Пожалуйста, введите номер лицензии",
+				"typeRequired": "Пожалуйста, выберите тип лицензии",
 				"types": {
-					"businessLicense": "Business License",
-					"creditCode": "Credit Code",
-					"organizationCode": "Organization Code"
+					"businessLicense": "Бизнес-лицензия",
+					"creditCode": "Кредитный код",
+					"organizationCode": "Код организации"
 				}
 			},
 			"name": {
-				"label": "Company Name",
-				"placeholder": "Enter full company name",
-				"required": "Please enter company name"
+				"label": "Название компании",
+				"placeholder": "Введите полное название компании",
+				"required": "Пожалуйста, введите название компании"
 			},
 			"type": {
-				"label": "Company Type",
+				"label": "Тип компании",
 				"options": {
-					"manufacturing": "Manufacturing",
-					"other": "Other",
-					"service": "Service Industry",
-					"technology": "Technology Company",
-					"trade": "Trading Company"
+					"manufacturing": "Производство",
+					"other": "Другое",
+					"service": "Сфера услуг",
+					"technology": "Технологическая компания",
+					"trade": "Торговая компания"
 				},
-				"placeholder": "Select company type",
-				"required": "Please select company type"
+				"placeholder": "Выберите тип компании",
+				"required": "Пожалуйста, выберите тип компании"
 			}
 		},
 		"contact": {
 			"name": {
-				"label": "Company Contact",
-				"labelIndividual": "Contact Person",
-				"placeholder": "Enter contact name",
-				"required": "Please enter contact name"
+				"label": "Контактное лицо компании",
+				"labelIndividual": "Контактное лицо",
+				"placeholder": "Введите имя контактного лица",
+				"required": "Пожалуйста, введите имя контактного лица"
 			},
 			"phone": {
-				"invalid": "Please enter a valid phone number",
-				"label": "Contact Phone",
-				"placeholder": "Enter contact phone",
-				"required": "Please enter contact phone"
+				"invalid": "Введите корректный номер телефона",
+				"label": "Контактный телефон",
+				"placeholder": "Введите контактный телефон",
+				"required": "Пожалуйста, введите контактный телефон"
 			}
 		},
-		"title": "Complete Profile",
+		"title": "Заполните профиль",
 		"type": {
-			"company": "Enterprise Partner",
-			"individual": "Individual Partner",
-			"label": "Type"
+			"company": "Корпоративный партнёр",
+			"individual": "Индивидуальный партнёр",
+			"label": "Тип"
 		}
 	},
 	"setPassword": {
 		"button": {
-			"confirm": "Confirm",
-			"skip": "Skip, don't set password for now"
+			"confirm": "Подтвердить",
+			"skip": "Пропустить, пока не задавать пароль"
 		},
-		"description": "To ensure your account security, we recommend setting a login password with at least 8 characters",
+		"description": "Для безопасности аккаунта рекомендуем задать пароль для входа длиной не менее 8 символов",
 		"form": {
-			"label": "Password",
-			"placeholder": "Please enter a password with at least 8 characters, containing letters and numbers",
+			"label": "Пароль",
+			"placeholder": "Введите пароль не менее 8 символов, с буквами и цифрами",
 			"validation": {
-				"combinationError": "Please include letters and numbers / letters and special characters / numbers and special characters",
-				"lengthError": "Password must be at least 8 characters long"
+				"combinationError": "Пожалуйста, используйте буквы и цифры / буквы и спецсимволы / цифры и спецсимволы",
+				"lengthError": "Пароль должен содержать не менее 8 символов"
 			}
 		},
-		"title": "Set Password"
+		"title": "Задать пароль"
 	},
 	"verification": {
 		"button": {
-			"activate": "Activate",
-			"cancel": "Cancel Activation"
+			"activate": "Активировать",
+			"cancel": "Отменить активацию"
 		},
-		"codeInvalid": "Verification code error, please re-enter",
-		"greeting": ", hello!",
-		"instruction": "Please use the following phone number to get verification code and join the organization",
+		"codeInvalid": "Неверный код подтверждения, введите снова",
+		"greeting": ", здравствуйте!",
+		"instruction": "Пожалуйста, используйте следующий номер телефона, чтобы получить код подтверждения и присоединиться к организации",
 		"invitation": {
-			"member": " is inviting you to join",
-			"partner": " is inviting you to become a partner"
+			"member": " приглашает вас присоединиться",
+			"partner": " приглашает вас стать партнёром"
 		}
 	}
 }

@@ -1,68 +1,68 @@
 {
-	"DownloadFailed": "Download failed",
-	"FileNotFound": "File path does not exist",
+	"DownloadFailed": "Не удалось скачать",
+	"FileNotFound": "Путь к файлу не существует",
 	"chat": {
-		"NoContent": "No content",
-		"NotSupport": "Not supported yet",
+		"NoContent": "Нет содержимого",
+		"NotSupport": "Пока не поддерживается",
 		"aggregate_ai_search_card": {
 			"eventDescription": "",
 			"eventTime": ""
 		},
-		"inquiry": "Inquiring...",
-		"pleaseChooseFriendAndChat": "Please choose one of your friends and start a conversation!",
-		"pleaseEnterMessageContent": "Please enter message",
+		"inquiry": "Идёт поиск...",
+		"pleaseChooseFriendAndChat": "Пожалуйста, выберите друга и начните разговор!",
+		"pleaseEnterMessageContent": "Пожалуйста, введите сообщение",
 		"recording_summary": {
-			"ai_result": "AI summary",
-			"doing_btn_text": "End recording summary",
-			"doing_tips": "Recording recognition in progress",
-			"end_tips": "Summarizing and understanding",
-			"error_tips": "There is an anomaly in the summary of the recording minutes",
-			"origin_content": "Original content",
-			"start_tips": "Waiting for recording connection",
-			"summarizing_btn_text": "Generating recording summary",
-			"summarizing_tips": "Summarizing and understanding",
-			"title": "Recording summary",
-			"username": "User"
+			"ai_result": "AI-сводка",
+			"doing_btn_text": "Завершить сводку записи",
+			"doing_tips": "Идёт распознавание записи",
+			"end_tips": "Идёт суммаризация и понимание",
+			"error_tips": "Произошла ошибка при создании сводки записи",
+			"origin_content": "Исходное содержимое",
+			"start_tips": "Ожидание подключения записи",
+			"summarizing_btn_text": "Создание сводки записи",
+			"summarizing_tips": "Идёт суммаризация и понимание",
+			"title": "Сводка записи",
+			"username": "Пользователь"
 		},
 		"topic": {
-			"notExist": "The topic does not exist"
+			"notExist": "Тема не существует"
 		}
 	},
 	"copy": {
-		"success": "Copied successfully"
+		"success": "Успешно скопировано"
 	},
 	"drive": {
 		"modal": {
-			"creatingFolder": "Creating",
-			"duplicateFileSuccess": "Copy created successfully",
-			"moveToSuccess": "Moved successfully",
-			"moveToTrashSuccess": "Moved to recycle bin successfully",
-			"renameSuccess": "Rename successful",
-			"renameWarn": "New name is empty"
+			"creatingFolder": "Создание",
+			"duplicateFileSuccess": "Копия успешно создана",
+			"moveToSuccess": "Успешно перемещено",
+			"moveToTrashSuccess": "Успешно перемещено в корзину",
+			"renameSuccess": "Переименование прошло успешно",
+			"renameWarn": "Новое имя пустое"
 		},
 		"table": {
-			"addToFavoriteSuccess": "Add to favorites successfully",
-			"copyLinkSuccess": "Copied successfully",
-			"downloadSuccess": "download successful",
-			"removeFromFavoriteSuccess": "Remove from favorites successfully"
+			"addToFavoriteSuccess": "Добавлено в избранное",
+			"copyLinkSuccess": "Скопировано",
+			"downloadSuccess": "Скачивание успешно завершено",
+			"removeFromFavoriteSuccess": "Удалено из избранного"
 		}
 	},
 	"file": {
-		"maxSize": "The maximum size of a single file is {{maxSize}}MB",
-		"onlySupportUploadImage": "Only support uploading png/jpg/jpeg/gif/webp format images",
-		"uploadFail": "File upload failed, please try again"
+		"maxSize": "Максимальный размер одного файла — {{maxSize}}MB",
+		"onlySupportUploadImage": "Поддерживаются только изображения форматов png/jpg/jpeg/gif/webp",
+		"uploadFail": "Не удалось загрузить файл, попробуйте снова"
 	},
 	"form": {
-		"passwordNotMatch": "The password you entered twice does not match, please re-enter it.",
-		"phoneRequired": "Please provide mobile phone number",
-		"stateCodeRequired": "Please enter 6-digit verification code",
-		"verificationCodeLengthRequired": "Verification code length is incorrect",
-		"verificationCodeRequired": "Verification code is empty"
+		"passwordNotMatch": "Введённые пароли не совпадают, пожалуйста, повторите ввод.",
+		"phoneRequired": "Пожалуйста, укажите номер телефона",
+		"stateCodeRequired": "Введите 6-значный код подтверждения",
+		"verificationCodeLengthRequired": "Неверная длина кода подтверждения",
+		"verificationCodeRequired": "Код подтверждения пустой"
 	},
 	"interface": {
 		"chat": {
 			"aggregate_ai_search_card": {
-				"relatedEvents": "Related events"
+				"relatedEvents": "Связанные события"
 			},
 			"chatHistory": {
 				"filter": {}
@@ -73,25 +73,25 @@
 			},
 			"topic": {
 				"menu": {
-					"rename_topic": "Rename"
+					"rename_topic": "Переименовать"
 				}
 			}
 		},
 		"drive": {
 			"modal": {
-				"creatingFolder": "Creating",
-				"renameWarn": "Please enter a new name"
+				"creatingFolder": "Создание",
+				"renameWarn": "Введите новое имя"
 			}
 		},
 		"setting": {}
 	},
 	"login": {
-		"invalidCodeTip": "Invalid verification code: ${code}",
-		"phoneInvalid": "Mobile phone number format is incorrect"
+		"invalidCodeTip": "Неверный код подтверждения: ${code}",
+		"phoneInvalid": "Неверный формат мобильного номера"
 	},
 	"setting": {
-		"changePasswordSuccess": "Successfully modified",
-		"invalidPhone": "Invalid mobile number",
-		"samePhone": "The new mobile phone number is the same as the old mobile phone number"
+		"changePasswordSuccess": "Успешно изменено",
+		"invalidPhone": "Неверный номер телефона",
+		"samePhone": "Новый номер телефона совпадает со старым"
 	}
 }

@@ -1,51 +1,51 @@
 {
 	"agents": {
-		"aiChat": "AI Chat"
+		"aiChat": "AI-чат"
 	},
 	"appsMenu": {
-		"aiApps": "AI Apps",
-		"aiFinance": "AI Finance",
-		"aiSearch": "AI Search",
-		"apps": "Apps",
-		"more": "More"
+		"aiApps": "AI-приложения",
+		"aiFinance": "AI-финансы",
+		"aiSearch": "AI-поиск",
+		"apps": "Приложения",
+		"more": "Ещё"
 	},
 	"crewMarket": {
-		"title": "Digtal Crew"
+		"title": "Цифровая команда"
 	},
 	"footer": {
-		"defaultUser": "User",
-		"feedback": "Feedback",
-		"freeAccount": "Free",
-		"helpCenter": "Help Center",
-		"inbox": "Inbox",
-		"recycleBin": "Recycle Bin",
-		"renew": "Renew",
-		"themeAuto": "System",
-		"themeDark": "Dark Mode",
-		"themeLight": "Light Mode",
-		"upgradeNow": "Upgrade"
+		"defaultUser": "Пользователь",
+		"feedback": "Обратная связь",
+		"freeAccount": "Бесплатный",
+		"helpCenter": "Центр помощи",
+		"inbox": "Входящие",
+		"recycleBin": "Корзина",
+		"renew": "Продлить",
+		"themeAuto": "Системная",
+		"themeDark": "Тёмная тема",
+		"themeLight": "Светлая тема",
+		"upgradeNow": "Обновить"
 	},
 	"home": {
-		"title": "Home"
+		"title": "Главная"
 	},
 	"mySkills": {
-		"title": "Skill Library"
+		"title": "Библиотека навыков"
 	},
 	"organizationSwitch": {
-		"addAccount": "Add Account",
-		"currentAccount": "Current Account",
-		"logoutAccount": "Log Out Account",
-		"otherAccount": "Other Accounts",
-		"personalVersion": "Personal Edition",
+		"addAccount": "Добавить аккаунт",
+		"currentAccount": "Текущий аккаунт",
+		"logoutAccount": "Выйти из аккаунта",
+		"otherAccount": "Другие аккаунты",
+		"personalVersion": "Персональная версия",
 		"saasPlatform": "SaaS"
 	},
 	"project": {
-		"empty": "No projects",
-		"enterName": "Enter new project name",
-		"loading": "Loading..."
+		"empty": "Нет проектов",
+		"enterName": "Введите название нового проекта",
+		"loading": "Загрузка..."
 	},
 	"skillsLibrary": {
-		"title": "Skills Library"
+		"title": "Библиотека навыков"
 	},
 	"superLobster": {
 		"card": {
@@ -115,7 +115,7 @@
 		}
 	},
 	"workspace": {
-		"add": "New Workspace",
-		"title": "Workspaces"
+		"add": "Новое рабочее пространство",
+		"title": "Рабочие пространства"
 	}
 }
