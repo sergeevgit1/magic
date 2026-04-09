@@ -72,10 +72,10 @@
 	"meta": {
 		"description": "",
 		"keywords": "",
-		"title": "Super Magic - First Open-Source Enterprise AI Agent Platform"
+		"title": "Super Magic — open-source enterprise AI agent platform"
 	},
 	"platform": {
-		"name": "SMM Agent"
+		"name": "Super Magic"
 	},
 	"routes": {
 		"admin": "Admin Console",
@@ -93,7 +93,7 @@
 		"contactsMy": "Contacts/My Groups",
 		"contactsMyFriends": "Contacts/My Friends",
 		"contactsOrganization": "Contacts/Organization",
-		"default": "Super Magic - First Open-Source Enterprise AI Agent Platform",
+		"default": "Super Magic — open-source enterprise AI agent platform",
 		"explore": "AI Assistant",
 		"global": "Super Magic",
 		"invite": "Invitation Code",

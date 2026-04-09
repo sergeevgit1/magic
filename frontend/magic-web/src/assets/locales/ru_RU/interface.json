@@ -2237,11 +2237,11 @@
 		"warning": "Использование старых браузеров может привести к некорректной работе или отображению некоторых функций"
 	},
 	"meta": {
-		"title": "SMM Agent — open-source enterprise AI agent platform"
+		"title": "Super Magic — open-source enterprise AI agent platform"
 	},
 	"routes": {
 		"login": "Вход",
-		"default": "SMM Agent — open-source enterprise AI agent platform",
-		"global": "SMM Agent"
+		"default": "Super Magic — open-source enterprise AI agent platform",
+		"global": "Super Magic"
 	}
 }
