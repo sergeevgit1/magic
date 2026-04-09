@@ -1,459 +1,459 @@
 {
-	"back": "Back",
-	"backToMyCrew": "Back to My Crew",
-	"card": {
-		"addSkills": "Add Skills",
-		"cancel": "Cancel",
-		"description": "Description",
-		"enterDescription": "Tap to Enter Description",
-		"enterName": "Tap to Enter Name",
-		"enterRole": "Tap to Enter Role",
-		"generating": {
-			"asciiDescription": "DESCRIPTION",
-			"asciiIdentity": "IDENTITY",
-			"asciiPromptFallback": "Generating prompt from live conversation...",
-			"asciiSkills": "SKILLS",
-			"asciiStatus": "Matching skills and locking profile editing",
-			"asciiTitle": "DIGITAL CREW CONFIGURATION",
-			"defaultRole": "Digital Crew Member",
-			"logFields": {
-				"description": "description",
-				"name": "name",
-				"prompt": "prompt",
-				"role": "role",
-				"skills": "skills"
-			},
-			"logs": {
-				"allocatingVirtualResources": "Allocating virtual resources...",
-				"analyzingInputConstraints": "Analyzing input constraints...",
-				"calibratingPersonalityMatrix": "Calibrating personality matrix...",
-				"compilingIdentityTraits": "Compiling identity traits...",
-				"establishingCognitivePathways": "Establishing cognitive pathways...",
-				"finalizingSystemCheck": "Finalizing system check...",
-				"generatingBehavioralModel": "Generating behavioral model...",
-				"initializingNeuralNetworks": "Initializing neural networks...",
-				"loadingKnowledgeBase": "Loading knowledge base...",
-				"lockingField": "Locking {{field}} editing entry...",
-				"matchingSkill": "Matching skill plugin: {{skill}}...",
-				"persistingCrewMemory": "Persisting crew memory context...",
-				"reconcilingPersona": "Reconciling persona and task boundaries...",
-				"refiningResponseTone": "Refining response tone and style...",
-				"scoringCandidate": "Candidate configuration score: {{score}}/100...",
-				"syncingContextMemory": "Syncing context memory...",
-				"verifyingSecurityProtocols": "Verifying security protocols..."
-			},
-			"subtitle": "Matching core skill plugins from Skills Library...",
-			"title": "Creating..."
-		},
-		"localizeDialog": {
-			"tabDescription": "Description",
-			"tabName": "Name",
-			"tabRole": "Role",
-			"title": "Localize: Identity"
-		},
-		"prompt": "Prompt",
-		"reset": "Reset",
-		"save": "Save",
-		"skills": "Skills"
-	},
-	"errors": {
-		"createSceneFailed": "Failed to create playbook. Save crew first.",
-		"crewCodeRequired": "Please save the crew first",
-		"deleteSceneFailed": "Failed to delete playbook",
-		"loadAgentFailed": "Failed to load agent",
-		"loadScenesFailed": "Failed to load playbooks",
-		"reorderScenesFailed": "Failed to reorder playbooks",
-		"saveCrewFailed": "Failed to save crew",
-		"saveSkillsFailed": "Failed to save skills",
-		"toggleSceneFailed": "Failed to toggle playbook",
-		"updateSceneFailed": "Failed to update playbook"
-	},
-	"knowledgeBase": {
-		"create": "Create Knowledge Base",
-		"emptyDescription": "Link professional knowledge to make your agent's responses more accurate and professional.",
-		"emptyTitle": "No Knowledge Base Linked"
-	},
-	"noDescription": "No description available",
-	"noSkills": "No skills available",
-	"playbook": {
-		"actions": {
-			"delete": "Delete",
-			"disable": "Disabled",
-			"edit": "Edit",
-			"enable": "Enable"
-		},
-		"batchDelete": "Delete ({{count}})",
-		"batchDeleteConfirm": {
-			"description": "Delete {{count}} selected scene(s)? This action cannot be undone.",
-			"title": "Confirm Delete"
-		},
-		"cancelSelection": "Cancel",
-		"create": "Create",
-		"creating": "Creating…",
-		"edit": {
-			"backToList": "Playbooks",
-			"basicInfo": {
-				"color": "Color",
-				"colorPicker": {
-					"title": "Select Color"
-				},
-				"description": "Description",
-				"descriptionPlaceholder": "Enter description",
-				"enable": "Enable",
-				"icon": "Icon",
-				"iconPicker": {
-					"noResults": "No icons found",
-					"searchPlaceholder": "Search icons…"
-				},
-				"localeDialog": {
-					"cancel": "Cancel",
-					"confirm": "Confirm",
-					"defaultLabel": "Content",
-					"fallbackHint": "Languages left empty will fallback to Original (Default).",
-					"localeLabels": {
-						"en_US": "English",
-						"zh_CN": "Simplified Chinese"
-					},
-					"original": "Original (Default)",
-					"title": "Localize: {{label}}",
-					"usingDefault": "Using default: {{value}}"
-				},
-				"name": "Title",
-				"namePlaceholder": "Enter title",
-				"otherLanguages": "Other Languages",
-				"reset": "Reset",
-				"save": "Save",
-				"title": "Basic Information"
-			},
-			"createPlaybook": "Edit Playbook",
-			"enable": "Enable",
-			"filter": {
-				"all": "All",
-				"create": "Create",
-				"reset": "Reset",
-				"search": "Search",
-				"selectAll": "Select All"
-			},
-			"inspiration": {
-				"actions": {
-					"delete": "Delete",
-					"edit": "Edit"
-				},
-				"badges": {
-					"textList": "Text List"
-				},
-				"batchDelete": "Delete ({{count}})",
-				"batchDeleteConfirm": {
-					"description": "Delete the selected {{count}} inspiration item(s)? This action cannot be undone.",
-					"title": "Confirm Delete"
-				},
-				"cancelSelection": "Cancel",
-				"config": {
-					"cancel": "Cancel",
-					"confirm": "Confirm",
-					"panelTitle": "Title",
-					"panelTitlePlaceholder": "Enter title",
-					"theme": "Theme",
-					"themeOptions": {
-						"capsule": "Capsule",
-						"grid": "Card",
-						"textList": "Text List",
-						"text_list": "Text List",
-						"waterfall": "Waterfall"
-					},
-					"title": "Edit Configuration"
-				},
-				"createGroup": "Create Group",
-				"defaultGroup": "Default",
-				"deleteGroupConfirm": {
-					"description": "Delete this group and all its inspiration items? This action cannot be undone.",
-					"title": "Confirm Delete Group"
-				},
-				"deleteItemConfirm": {
-					"description": "Delete this inspiration item?",
-					"title": "Confirm Delete"
-				},
-				"empty": {
-					"create": "Create new",
-					"description": "Provide users with clear command references by filling in inspiration examples, lowering the barrier to entry.",
-					"title": "Help Users Explore"
-				},
-				"group": {
-					"cancel": "Cancel",
-					"confirm": "Confirm",
-					"icon": "Icon",
-					"name": "Title",
-					"namePlaceholder": "Enter title",
-					"titleCreate": "Create Group",
-					"titleEdit": "Edit Group"
-				},
-				"item": {
-					"cancel": "Cancel",
-					"confirm": "Confirm",
-					"coverImage": "Cover Image",
-					"group": "Group",
-					"noCoverAvailable": "No Cover Available",
-					"prompt": "Prompt",
-					"promptPlaceholder": "Enter prompt content",
-					"title": "Title",
-					"titleCreate": "Create",
-					"titleEdit": "Edit",
-					"titlePlaceholder": "Enter title",
-					"upload": "Upload",
-					"uploadFail": "Cover upload failed, please retry",
-					"uploadSuccess": "Cover uploaded successfully"
-				},
-				"title": "Inspiration Exploration"
-			},
-			"nav": {
-				"basicInfo": "Basic Information",
-				"inspiration": "Inspiration Exploration",
-				"presets": "Presets",
-				"quickStart": "Quick Start"
-			},
-			"presets": {
-				"actions": {
-					"delete": "Delete",
-					"disable": "Disabled",
-					"edit": "Edit",
-					"enable": "Enable"
-				},
-				"badges": {
-					"dropdown": "Dropdown",
-					"theme": "Theme"
-				},
-				"batchDelete": "Delete ({{count}})",
-				"batchDeleteConfirm": {
-					"description": "Delete the selected {{count}} preset(s)? This action cannot be undone.",
-					"title": "Confirm Delete"
-				},
-				"cancelSelection": "Cancel",
-				"config": {
-					"cancel": "Cancel",
-					"confirm": "Confirm",
-					"theme": "Theme",
-					"themeOptions": {
-						"capsule": "Capsule",
-						"dropdown": "Dropdown",
-						"grid": "Card",
-						"textList": "Text List",
-						"waterfall": "Waterfall"
-					},
-					"title": "Edit Configuration"
-				},
-				"deleteItemConfirm": {
-					"description": "Delete this preset?",
-					"title": "Confirm Delete"
-				},
-				"empty": {
-					"create": "Create new",
-					"description": "Define commonly used configurations to ensure generated results meet expectations.",
-					"title": "No preset instructions available"
-				},
-				"form": {
-					"actions": "Actions",
-					"addOption": "Add Option",
-					"cancel": "Cancel",
-					"confirm": "Confirm",
-					"displayName": "Display Name",
-					"errorNameRequired": "Name is required",
-					"errorOptionRequired": "At least one option is required",
-					"insertPresetValue": "Insert Preset Value",
-					"name": "Name",
-					"namePlaceholder": "Enter name, e.g., Size、Scale",
-					"noOption": "No Option Configured",
-					"optionLabel": "Option {{number}}",
-					"optional": "Optional",
-					"presetContent": "Preset Content",
-					"presetContentPlaceholder": "Enter instruction to be appended to user messages (via Preset Value)",
-					"presetValue": "Preset Value",
-					"preview": "Preview",
-					"setAsDefault": "Set as Default",
-					"titleCreate": "Create",
-					"titleEdit": "Edit"
-				},
-				"gallery": {
-					"configured": "Gallery Options: Configured",
-					"dialog": {
-						"add": "Add",
-						"cancel": "Cancel",
-						"confirm": "Confirm",
-						"defaultValue": "Default",
-						"defaultValuePlaceholder": "Select default option",
-						"name": "Name",
-						"namePlaceholder": "Enter name",
-						"noDefault": "No default",
-						"presetContent": "Preset Content",
-						"presetContentPlaceholder": "Enter instruction to be appended to user messages (via Preset Value)",
-						"title": "Gallery Options"
-					},
-					"edit": "Edit",
-					"item": {
-						"cancel": "Cancel",
-						"confirm": "Confirm",
-						"coverImage": "Cover Image",
-						"description": "Description",
-						"descriptionPlaceholder": "Enter description",
-						"errorCoverRequired": "Cover image is required",
-						"errorTitleRequired": "Title is required",
-						"errorValueRequired": "Preset value is required",
-						"noCover": "No cover available",
-						"subText": "Sub Text",
-						"subTextPlaceholder": "Enter sub text",
-						"title": "Title",
-						"titleCreate": "Create",
-						"titleEdit": "Edit",
-						"titlePlaceholder": "Enter title",
-						"upload": "Upload",
-						"uploadFail": "Cover upload failed, please retry",
-						"uploadSuccess": "Cover uploaded successfully",
-						"value": "Preset Value",
-						"valuePlaceholder": "Enter preset value"
-					}
-				},
-				"title": "Presets",
-				"updatedAt": "Updated on {{date}}"
-			},
-			"quickStart": {
-				"action": {
-					"noAction": "No Action"
-				},
-				"batchDelete": "Delete ({{count}})",
-				"batchDeleteConfirm": {
-					"description": "Delete the selected {{count}} quick start item(s)? This action cannot be undone.",
-					"title": "Confirm Delete"
-				},
-				"cancelSelection": "Cancel",
-				"config": {
-					"cancel": "Cancel",
-					"confirm": "Confirm",
-					"panelTitle": "Title",
-					"panelTitlePlaceholder": "Enter title",
-					"title": "Edit Configuration"
-				},
-				"deleteItemConfirm": {
-					"description": "Delete this quick start item?",
-					"title": "Confirm Delete"
-				},
-				"empty": {
-					"create": "Create new",
-					"description": "Configure high-frequency actions to achieve one-tap execution with preset commands.",
-					"title": "No Quick Starts Defined"
-				},
-				"form": {
-					"cancel": "Cancel",
-					"clickAction": "Click Action",
-					"clickActions": {
-						"aiEnhancement": "AI Enhancement",
-						"fillContent": "Fill Content",
-						"focusInput": "Focus Input",
-						"noAction": "No Action",
-						"openUrl": "Open URL",
-						"uploadFile": "Upload File"
-					},
-					"confirm": "Confirm",
-					"description": "Description",
-					"descriptionPlaceholder": "Enter a brief description",
-					"executionMethod": "Execution Method",
-					"executionMethods": {
-						"insertToInput": "Insert to Input",
-						"sendImmediately": "Send immediately"
-					},
-					"icon": "Icon",
-					"iconEmpty": "No Icon Available",
-					"iconSize": "128*128px",
-					"presetContent": "Preset Content",
-					"presetContentPlaceholder": "Enter preset content that will populate the input field when users click",
-					"title": "Title",
-					"titleCreate": "Create",
-					"titleEdit": "Edit",
-					"titlePlaceholder": "Enter title",
-					"upload": "Upload",
-					"uploadFail": "Icon upload failed, please retry",
-					"uploadSuccess": "Icon uploaded successfully",
-					"url": "URL",
-					"urlPlaceholder": "Enter URL"
-				},
-				"title": "Quick Start",
-				"updatedAt": "Updated on {{date}}"
-			},
-			"saveFailed": "Save failed, please try again",
-			"saveSuccess": "Saved successfully"
-		},
-		"filter": {
-			"all": "All",
-			"disabled": "Disabled",
-			"enabled": "Enabled"
-		},
-		"loading": "Loading...",
-		"noData": "No more data.",
-		"noPresets": "No Presets Available",
-		"reset": "Reset",
-		"retry": "Retry",
-		"searchPlaceholder": "Search",
-		"selectAll": "Select All",
-		"selectPlaybook": "Select a playbook from the left list",
-		"title": "Playbook",
-		"untitled": "Untitled",
-		"untitledDescription": "No description",
-		"updatedAt": "Updated on {{date}}"
-	},
-	"publishNameDialog": {
-		"confirm": "Confirm and continue",
-		"description": "",
-		"placeholder": "Enter crew name",
-		"required": "Please enter a crew name",
-		"title": "Name the crew before publishing"
-	},
-	"scenarioPresets": "Playbooks",
-	"sidebarTabs": {
-		"advanced": "Advanced",
-		"files": "Files"
-	},
-	"skills": {
-		"addFromLibrary": "Add from Skills Library",
-		"addFromLibraryDesc": "Add skills directly in Skills Library",
-		"aiSearch": "AI Search",
-		"aiSearchPlaceholder": "Enter keywords or describe the skills you need",
-		"builtinTitle": "Built-in Skills ({{count}})",
-		"create": "Create Skill",
-		"emptyDescription": "Add Your First AI Skill from the Library or Create One",
-		"emptyTitle": "No Skills Yet",
-		"importSkill": "Import Skill",
-		"importSkillDesc": "Upload .Skill, .Zip or folder",
-		"install": "Install",
-		"library": "Skills Library",
-		"loadingMore": "Loading more...",
-		"mySkills": "My Skills",
-		"noMoreData": "No more data.",
-		"remove": "Remove",
-		"title": "Skills",
-		"uninstall": "Uninstall"
-	},
-	"status": {
-		"builtIn": "Built-in ({{count}})",
-		"configured": "Configured",
-		"notConfigured": "Not Configured",
-		"skillCount": "{{count}} Skills",
-		"unpublished": "Unpublished"
-	},
-	"steps": {
-		"identity": "Identity",
-		"knowledgeBase": "Knowledge Base",
-		"publishing": "Publishing",
-		"runAndDebug": "Run and Debug",
-		"skills": "Skills",
-		"step": "Step {{number}}"
-	},
-	"topic": {
-		"emptySubtitle": "Describe their job, we'll handle the rest.",
-		"emptyTitle": "Create Your Digital Crew",
-		"helpAction": "Let it help you craft your digital employee's personality.",
-		"helpText": "Not sure how to set it up?",
-		"inputHint": "Enter to send ; Shift + Enter for new line",
-		"inputPlaceholder": "What should this member do? E.g., A marketing analyst who can write weekly reports...",
-		"untitledTopic": "Untitled Topic {{index}}"
-	},
-	"untitledCrew": "Untitled Crew",
-	"untitledTopic": "Untitled Topic"
+  "back": "Назад",
+  "backToMyCrew": "Назад к My Crew",
+  "card": {
+    "addSkills": "Добавить навыки",
+    "cancel": "Отмена",
+    "description": "Описание",
+    "enterDescription": "Нажмите, чтобы ввести описание",
+    "enterName": "Нажмите, чтобы ввести имя",
+    "enterRole": "Нажмите, чтобы ввести роль",
+    "generating": {
+      "asciiDescription": "ОПИСАНИЕ",
+      "asciiIdentity": "ИДЕНТИЧНОСТЬ",
+      "asciiPromptFallback": "Генерация промпта из текущего разговора...",
+      "asciiSkills": "НАВЫКИ",
+      "asciiStatus": "Подбор навыков и блокировка редактирования профиля",
+      "asciiTitle": "КОНФИГУРАЦИЯ DIGITAL CREW",
+      "defaultRole": "Участник Digital Crew",
+      "logFields": {
+        "description": "описание",
+        "name": "имя",
+        "prompt": "промпт",
+        "role": "роль",
+        "skills": "навыки"
+      },
+      "logs": {
+        "allocatingVirtualResources": "Выделение виртуальных ресурсов...",
+        "analyzingInputConstraints": "Анализ входных ограничений...",
+        "calibratingPersonalityMatrix": "Калибровка матрицы личности...",
+        "compilingIdentityTraits": "Сборка характеристик идентичности...",
+        "establishingCognitivePathways": "Формирование когнитивных путей...",
+        "finalizingSystemCheck": "Завершение системной проверки...",
+        "generatingBehavioralModel": "Генерация поведенческой модели...",
+        "initializingNeuralNetworks": "Инициализация нейросетей...",
+        "loadingKnowledgeBase": "Загрузка базы знаний...",
+        "lockingField": "Блокировка редактирования поля {{field}}...",
+        "matchingSkill": "Подбор плагина навыка: {{skill}}...",
+        "persistingCrewMemory": "Сохранение контекста памяти Crew...",
+        "reconcilingPersona": "Согласование персоны и границ задач...",
+        "refiningResponseTone": "Уточнение тона и стиля ответов...",
+        "scoringCandidate": "Оценка конфигурации кандидата: {{score}}/100...",
+        "syncingContextMemory": "Синхронизация памяти контекста...",
+        "verifyingSecurityProtocols": "Проверка протоколов безопасности..."
+      },
+      "subtitle": "Подбор основных плагинов навыков из Skills Library...",
+      "title": "Создание..."
+    },
+    "localizeDialog": {
+      "tabDescription": "Описание",
+      "tabName": "Имя",
+      "tabRole": "Роль",
+      "title": "Локализация: идентичность"
+    },
+    "prompt": "Промпт",
+    "reset": "Сбросить",
+    "save": "Сохранить",
+    "skills": "Навыки"
+  },
+  "errors": {
+    "createSceneFailed": "Не удалось создать playbook. Сначала сохраните crew.",
+    "crewCodeRequired": "Сначала сохраните crew",
+    "deleteSceneFailed": "Не удалось удалить playbook",
+    "loadAgentFailed": "Не удалось загрузить агента",
+    "loadScenesFailed": "Не удалось загрузить playbooks",
+    "reorderScenesFailed": "Не удалось изменить порядок playbooks",
+    "saveCrewFailed": "Не удалось сохранить crew",
+    "saveSkillsFailed": "Не удалось сохранить навыки",
+    "toggleSceneFailed": "Не удалось переключить playbook",
+    "updateSceneFailed": "Не удалось обновить playbook"
+  },
+  "knowledgeBase": {
+    "create": "Создать базу знаний",
+    "emptyDescription": "Подключите профессиональные знания, чтобы ответы вашего агента были точнее и профессиональнее.",
+    "emptyTitle": "База знаний не подключена"
+  },
+  "noDescription": "Описание недоступно",
+  "noSkills": "Навыки недоступны",
+  "playbook": {
+    "actions": {
+      "delete": "Удалить",
+      "disable": "Отключено",
+      "edit": "Редактировать",
+      "enable": "Включить"
+    },
+    "batchDelete": "Удалить ({{count}})",
+    "batchDeleteConfirm": {
+      "description": "Удалить {{count}} выбранн(ые/ых) сцен(ы)? Это действие нельзя отменить.",
+      "title": "Подтвердите удаление"
+    },
+    "cancelSelection": "Отмена",
+    "create": "Создать",
+    "creating": "Создание…",
+    "edit": {
+      "backToList": "Playbooks",
+      "basicInfo": {
+        "color": "Цвет",
+        "colorPicker": {
+          "title": "Выбрать цвет"
+        },
+        "description": "Описание",
+        "descriptionPlaceholder": "Введите описание",
+        "enable": "Включить",
+        "icon": "Иконка",
+        "iconPicker": {
+          "noResults": "Иконки не найдены",
+          "searchPlaceholder": "Поиск иконок…"
+        },
+        "localeDialog": {
+          "cancel": "Отмена",
+          "confirm": "Подтвердить",
+          "defaultLabel": "Содержимое",
+          "fallbackHint": "Для языков, оставленных пустыми, будет использоваться Original (Default).",
+          "localeLabels": {
+            "en_US": "Английский",
+            "zh_CN": "Китайский (упрощённый)"
+          },
+          "original": "Original (Default)",
+          "title": "Локализация: {{label}}",
+          "usingDefault": "Используется значение по умолчанию: {{value}}"
+        },
+        "name": "Заголовок",
+        "namePlaceholder": "Введите заголовок",
+        "otherLanguages": "Другие языки",
+        "reset": "Сбросить",
+        "save": "Сохранить",
+        "title": "Основная информация"
+      },
+      "createPlaybook": "Редактировать Playbook",
+      "enable": "Включить",
+      "filter": {
+        "all": "Все",
+        "create": "Создать",
+        "reset": "Сбросить",
+        "search": "Поиск",
+        "selectAll": "Выбрать все"
+      },
+      "inspiration": {
+        "actions": {
+          "delete": "Удалить",
+          "edit": "Редактировать"
+        },
+        "badges": {
+          "textList": "Текстовый список"
+        },
+        "batchDelete": "Удалить ({{count}})",
+        "batchDeleteConfirm": {
+          "description": "Удалить выбранные элементы вдохновения ({{count}})? Это действие нельзя отменить.",
+          "title": "Подтвердите удаление"
+        },
+        "cancelSelection": "Отмена",
+        "config": {
+          "cancel": "Отмена",
+          "confirm": "Подтвердить",
+          "panelTitle": "Заголовок",
+          "panelTitlePlaceholder": "Введите заголовок",
+          "theme": "Тема",
+          "themeOptions": {
+            "capsule": "Капсула",
+            "grid": "Карточка",
+            "textList": "Текстовый список",
+            "text_list": "Текстовый список",
+            "waterfall": "Водопад"
+          },
+          "title": "Редактировать конфигурацию"
+        },
+        "createGroup": "Создать группу",
+        "defaultGroup": "По умолчанию",
+        "deleteGroupConfirm": {
+          "description": "Удалить эту группу и все её элементы вдохновения? Это действие нельзя отменить.",
+          "title": "Подтвердите удаление группы"
+        },
+        "deleteItemConfirm": {
+          "description": "Удалить этот элемент вдохновения?",
+          "title": "Подтвердите удаление"
+        },
+        "empty": {
+          "create": "Создать",
+          "description": "Добавьте примеры вдохновения, чтобы дать пользователям понятные ориентиры по командам и снизить порог входа.",
+          "title": "Помогите пользователям изучить возможности"
+        },
+        "group": {
+          "cancel": "Отмена",
+          "confirm": "Подтвердить",
+          "icon": "Иконка",
+          "name": "Заголовок",
+          "namePlaceholder": "Введите заголовок",
+          "titleCreate": "Создать группу",
+          "titleEdit": "Редактировать группу"
+        },
+        "item": {
+          "cancel": "Отмена",
+          "confirm": "Подтвердить",
+          "coverImage": "Обложка",
+          "group": "Группа",
+          "noCoverAvailable": "Обложка недоступна",
+          "prompt": "Промпт",
+          "promptPlaceholder": "Введите содержимое промпта",
+          "title": "Заголовок",
+          "titleCreate": "Создать",
+          "titleEdit": "Редактировать",
+          "titlePlaceholder": "Введите заголовок",
+          "upload": "Загрузить",
+          "uploadFail": "Не удалось загрузить обложку, повторите попытку",
+          "uploadSuccess": "Обложка успешно загружена"
+        },
+        "title": "Изучение идей"
+      },
+      "nav": {
+        "basicInfo": "Основная информация",
+        "inspiration": "Изучение идей",
+        "presets": "Пресеты",
+        "quickStart": "Быстрый старт"
+      },
+      "presets": {
+        "actions": {
+          "delete": "Удалить",
+          "disable": "Отключено",
+          "edit": "Редактировать",
+          "enable": "Включить"
+        },
+        "badges": {
+          "dropdown": "Выпадающий список",
+          "theme": "Тема"
+        },
+        "batchDelete": "Удалить ({{count}})",
+        "batchDeleteConfirm": {
+          "description": "Удалить выбранные пресеты ({{count}})? Это действие нельзя отменить.",
+          "title": "Подтвердите удаление"
+        },
+        "cancelSelection": "Отмена",
+        "config": {
+          "cancel": "Отмена",
+          "confirm": "Подтвердить",
+          "theme": "Тема",
+          "themeOptions": {
+            "capsule": "Капсула",
+            "dropdown": "Выпадающий список",
+            "grid": "Карточка",
+            "textList": "Текстовый список",
+            "waterfall": "Водопад"
+          },
+          "title": "Редактировать конфигурацию"
+        },
+        "deleteItemConfirm": {
+          "description": "Удалить этот пресет?",
+          "title": "Подтвердите удаление"
+        },
+        "empty": {
+          "create": "Создать",
+          "description": "Определите часто используемые конфигурации, чтобы сгенерированные результаты соответствовали ожиданиям.",
+          "title": "Инструкции пресетов отсутствуют"
+        },
+        "form": {
+          "actions": "Действия",
+          "addOption": "Добавить вариант",
+          "cancel": "Отмена",
+          "confirm": "Подтвердить",
+          "displayName": "Отображаемое имя",
+          "errorNameRequired": "Имя обязательно",
+          "errorOptionRequired": "Требуется как минимум один вариант",
+          "insertPresetValue": "Вставить значение пресета",
+          "name": "Имя",
+          "namePlaceholder": "Введите имя, например: Size, Scale",
+          "noOption": "Нет настроенных вариантов",
+          "optionLabel": "Вариант {{number}}",
+          "optional": "Необязательно",
+          "presetContent": "Содержимое пресета",
+          "presetContentPlaceholder": "Введите инструкцию, которая будет добавляться к сообщениям пользователя (через значение пресета)",
+          "presetValue": "Значение пресета",
+          "preview": "Предпросмотр",
+          "setAsDefault": "Установить по умолчанию",
+          "titleCreate": "Создать",
+          "titleEdit": "Редактировать"
+        },
+        "gallery": {
+          "configured": "Параметры галереи: настроено",
+          "dialog": {
+            "add": "Добавить",
+            "cancel": "Отмена",
+            "confirm": "Подтвердить",
+            "defaultValue": "По умолчанию",
+            "defaultValuePlaceholder": "Выберите вариант по умолчанию",
+            "name": "Имя",
+            "namePlaceholder": "Введите имя",
+            "noDefault": "Без значения по умолчанию",
+            "presetContent": "Содержимое пресета",
+            "presetContentPlaceholder": "Введите инструкцию, которая будет добавляться к сообщениям пользователя (через значение пресета)",
+            "title": "Параметры галереи"
+          },
+          "edit": "Редактировать",
+          "item": {
+            "cancel": "Отмена",
+            "confirm": "Подтвердить",
+            "coverImage": "Обложка",
+            "description": "Описание",
+            "descriptionPlaceholder": "Введите описание",
+            "errorCoverRequired": "Требуется изображение обложки",
+            "errorTitleRequired": "Заголовок обязателен",
+            "errorValueRequired": "Требуется значение пресета",
+            "noCover": "Обложка недоступна",
+            "subText": "Подтекст",
+            "subTextPlaceholder": "Введите подтекст",
+            "title": "Заголовок",
+            "titleCreate": "Создать",
+            "titleEdit": "Редактировать",
+            "titlePlaceholder": "Введите заголовок",
+            "upload": "Загрузить",
+            "uploadFail": "Не удалось загрузить обложку, повторите попытку",
+            "uploadSuccess": "Обложка успешно загружена",
+            "value": "Значение пресета",
+            "valuePlaceholder": "Введите значение пресета"
+          }
+        },
+        "title": "Пресеты",
+        "updatedAt": "Обновлено {{date}}"
+      },
+      "quickStart": {
+        "action": {
+          "noAction": "Без действия"
+        },
+        "batchDelete": "Удалить ({{count}})",
+        "batchDeleteConfirm": {
+          "description": "Удалить выбранные элементы быстрого старта ({{count}})? Это действие нельзя отменить.",
+          "title": "Подтвердите удаление"
+        },
+        "cancelSelection": "Отмена",
+        "config": {
+          "cancel": "Отмена",
+          "confirm": "Подтвердить",
+          "panelTitle": "Заголовок",
+          "panelTitlePlaceholder": "Введите заголовок",
+          "title": "Редактировать конфигурацию"
+        },
+        "deleteItemConfirm": {
+          "description": "Удалить этот элемент быстрого старта?",
+          "title": "Подтвердите удаление"
+        },
+        "empty": {
+          "create": "Создать",
+          "description": "Настройте часто используемые действия, чтобы запускать их в одно нажатие с помощью заранее заданных команд.",
+          "title": "Быстрый старт не настроен"
+        },
+        "form": {
+          "cancel": "Отмена",
+          "clickAction": "Действие по нажатию",
+          "clickActions": {
+            "aiEnhancement": "AI-улучшение",
+            "fillContent": "Заполнить содержимое",
+            "focusInput": "Перевести фокус на поле ввода",
+            "noAction": "Без действия",
+            "openUrl": "Открыть URL",
+            "uploadFile": "Загрузить файл"
+          },
+          "confirm": "Подтвердить",
+          "description": "Описание",
+          "descriptionPlaceholder": "Введите краткое описание",
+          "executionMethod": "Способ выполнения",
+          "executionMethods": {
+            "insertToInput": "Вставить в поле ввода",
+            "sendImmediately": "Отправить сразу"
+          },
+          "icon": "Иконка",
+          "iconEmpty": "Иконка недоступна",
+          "iconSize": "128*128px",
+          "presetContent": "Содержимое пресета",
+          "presetContentPlaceholder": "Введите содержимое пресета, которое будет заполнять поле ввода при нажатии пользователем",
+          "title": "Заголовок",
+          "titleCreate": "Создать",
+          "titleEdit": "Редактировать",
+          "titlePlaceholder": "Введите заголовок",
+          "upload": "Загрузить",
+          "uploadFail": "Не удалось загрузить иконку, повторите попытку",
+          "uploadSuccess": "Иконка успешно загружена",
+          "url": "URL",
+          "urlPlaceholder": "Введите URL"
+        },
+        "title": "Быстрый старт",
+        "updatedAt": "Обновлено {{date}}"
+      },
+      "saveFailed": "Не удалось сохранить, попробуйте ещё раз",
+      "saveSuccess": "Успешно сохранено"
+    },
+    "filter": {
+      "all": "Все",
+      "disabled": "Отключено",
+      "enabled": "Включено"
+    },
+    "loading": "Загрузка...",
+    "noData": "Больше нет данных.",
+    "noPresets": "Пресеты недоступны",
+    "reset": "Сбросить",
+    "retry": "Повторить",
+    "searchPlaceholder": "Поиск",
+    "selectAll": "Выбрать все",
+    "selectPlaybook": "Выберите playbook из списка слева",
+    "title": "Playbook",
+    "untitled": "Без названия",
+    "untitledDescription": "Без описания",
+    "updatedAt": "Обновлено {{date}}"
+  },
+  "publishNameDialog": {
+    "confirm": "Подтвердить и продолжить",
+    "description": "",
+    "placeholder": "Введите название crew",
+    "required": "Введите название crew",
+    "title": "Назовите crew перед публикацией"
+  },
+  "scenarioPresets": "Playbooks",
+  "sidebarTabs": {
+    "advanced": "Расширенные",
+    "files": "Файлы"
+  },
+  "skills": {
+    "addFromLibrary": "Добавить из Skills Library",
+    "addFromLibraryDesc": "Добавляйте навыки прямо из Skills Library",
+    "aiSearch": "AI-поиск",
+    "aiSearchPlaceholder": "Введите ключевые слова или опишите нужные навыки",
+    "builtinTitle": "Встроенные навыки ({{count}})",
+    "create": "Создать навык",
+    "emptyDescription": "Добавьте свой первый AI-навык из библиотеки или создайте его",
+    "emptyTitle": "Пока нет навыков",
+    "importSkill": "Импортировать навык",
+    "importSkillDesc": "Загрузите .Skill, .Zip или папку",
+    "install": "Установить",
+    "library": "Skills Library",
+    "loadingMore": "Загрузка...",
+    "mySkills": "Мои навыки",
+    "noMoreData": "Больше нет данных.",
+    "remove": "Удалить",
+    "title": "Навыки",
+    "uninstall": "Удалить"
+  },
+  "status": {
+    "builtIn": "Встроенные ({{count}})",
+    "configured": "Настроено",
+    "notConfigured": "Не настроено",
+    "skillCount": "Навыков: {{count}}",
+    "unpublished": "Не опубликовано"
+  },
+  "steps": {
+    "identity": "Идентичность",
+    "knowledgeBase": "База знаний",
+    "publishing": "Публикация",
+    "runAndDebug": "Запуск и отладка",
+    "skills": "Навыки",
+    "step": "Шаг {{number}}"
+  },
+  "topic": {
+    "emptySubtitle": "Опишите их работу, а остальное мы сделаем сами.",
+    "emptyTitle": "Создайте свой Digital Crew",
+    "helpAction": "Пусть это поможет вам сформировать личность вашего цифрового сотрудника.",
+    "helpText": "Не уверены, как всё настроить?",
+    "inputHint": "Enter — отправить; Shift + Enter — новая строка",
+    "inputPlaceholder": "Что должен делать этот участник? Например: маркетинговый аналитик, который может писать еженедельные отчёты...",
+    "untitledTopic": "Тема без названия {{index}}"
+  },
+  "untitledCrew": "Crew без названия",
+  "untitledTopic": "Тема без названия"
 }

@@ -1,420 +1,420 @@
 {
-	"aiSearch": "AI Search",
-	"aiSearchPlaceholder": "Enter keywords or describe your needs to get the digital employee you want",
-	"back": "Back",
-	"categories": {
-		"adminOps": "Admin & Ops",
-		"allCrew": "All Crew",
-		"creativeContent": "Creative & Content",
-		"dataInsights": "Data Insights",
-		"legalCompliance": "Legal & Compliance",
-		"marketingGrowth": "Marketing & Growth",
-		"salesBusiness": "Sales & Business",
-		"starCrew": "Star Crew",
-		"techDev": "Tech & Dev"
-	},
-	"createCrew": "Create Crew",
-	"detailDialog": {
-		"emptyName": "Untitled Crew",
-		"emptyPlaybook": "No playbooks available",
-		"emptyRole": "Digital Crew Member",
-		"loadFailed": "Failed to load crew details. Please try again.",
-		"retry": "Retry"
-	},
-	"details": "Details",
-	"dismiss": "Dismiss",
-	"editCrew": {
-		"actions": {
-			"upload": "Upload"
-		},
-		"buttons": {
-			"cancel": "Cancel",
-			"confirm": "Save"
-		},
-		"done": "Crew updated successfully!",
-		"errors": {
-			"saveFailed": "Failed to save crew. Please try again."
-		},
-		"fields": {
-			"avatar": "Avatar"
-		},
-		"title": "Edit Crew"
-	},
-	"editSkill": {
-		"buttons": {
-			"cancel": "Cancel",
-			"confirm": "Save"
-		},
-		"done": "Skill updated successfully!",
-		"errors": {
-			"fetchFailed": "Failed to load skill details. Please try again.",
-			"saveFailed": "Failed to save skill. Please try again."
-		},
-		"placeholders": {
-			"description": "Enter skill description",
-			"name": "Enter skill name"
-		},
-		"title": "Edit Skill"
-	},
-	"employeeCard": {
-		"createdByYouNoHiringNeeded": "Created by you, no hiring needed",
-		"hired": "Hired",
-		"officialBuiltin": "Official built-in",
-		"publisherDefault": "Publisher",
-		"publisherOfficial": "MagiCrew",
-		"publisherPartner": "Partner",
-		"publisherUser": "Community",
-		"publisherVerified": "Verified creator"
-	},
-	"hire": "Hire",
-	"importSkill": {
-		"buttons": {
-			"back": "Back",
-			"cancel": "Cancel",
-			"confirm": "Confirm",
-			"next": "Next"
-		},
-		"done": "Skill imported successfully!",
-		"errors": {
-			"archiveFailed": "Failed to archive the folder. Please try again later.",
-			"emptyFolder": "The folder is empty and cannot be imported.",
-			"importFailed": "Skill import failed. Please try again later.",
-			"parseFailed": "Failed to parse skill file. Please check the file format.",
-			"singleItemOnly": "Only one file or folder can be dropped at a time."
-		},
-		"fileUpload": {
-			"browseEntry": "Browse file/folder",
-			"browseFiles": "Browse files",
-			"browseFolder": "Browse folder",
-			"browseHint": "Or click to browse a file or folder (import 1 item at a time, files must be in .zip or .skill format)",
-			"dragDrop": "Drag & drop a file or folder here",
-			"fileRequirement": "Uploaded files must be in .zip or .skill format"
-		},
-		"identity": {
-			"description": "Description",
-			"icon": "Icon",
-			"skillName": "Skill Name",
-			"upload": "Upload"
-		},
-		"processing": "Analyzing skill file...",
-		"publishPrompt": {
-			"cancel": "Not Now",
-			"confirm": "Publish",
-			"description": "After creating or updating a Skill, you need to publish it before it can be used. Would you like to publish it now?",
-			"title": "Publish Skill Now?"
-		},
-		"steps": {
-			"completeInfo": "Complete Skill Information",
-			"skillFile": "Select Skill File"
-		},
-		"title": "Import Skill"
-	},
-	"localizeIdentity": {
-		"cancel": "Cancel",
-		"confirm": "Confirm",
-		"english": "English",
-		"fallbackHint": "Languages left empty will automatically fallback to the Original (Default) content.",
-		"originalDefault": "Original (Default)",
-		"simplifiedChinese": "Simplified Chinese",
-		"tabs": {
-			"description": "Description",
-			"name": "Name",
-			"role": "Role"
-		},
-		"title": "Localize: Identity",
-		"usingDefault": "Using default"
-	},
-	"mobile": {
-		"runSearch": "Search",
-		"searchSheetTitle": "Search crew"
-	},
-	"myCrew": "My Crew",
-	"myCrewPage": {
-		"badgeUpdated": "Updated",
-		"crewType": {
-			"ariaLabel": "Crew type",
-			"createdByMe": "Created by Me",
-			"hiredByMe": "Hired by Me"
-		},
-		"delete": "Delete",
-		"deleteConfirm": {
-			"confirm": "Delete",
-			"description": "Once a Digital Crew member is deleted, it cannot be recovered. Please proceed with caution.",
-			"title": "Delete \"{{name}}\""
-		},
-		"disable": "Disable",
-		"disableConfirm": {
-			"confirm": "Disable",
-			"description": "After disabling, this Digital Crew member will stop being available to the current team. You can adjust it again later from publishing management.",
-			"title": "Disable \"{{name}}\""
-		},
-		"dismissConfirm": {
-			"confirm": "Dismiss",
-			"description": "Are you sure you want to dismiss this Digital Crew member? You can rehire them later.",
-			"title": "Dismiss \"{{name}}\""
-		},
-		"edit": "Edit",
-		"empty": "No crew yet. Create your first Crew now.",
-		"footerPoweredByBrand": "MagiCrew",
-		"footerPoweredByLead": "Powered by",
-		"footerPoweredByTail": "",
-		"footerPublisherHandle": "@MagiCrew",
-		"moreActionsAria": "More actions",
-		"openConversation": "Chat",
-		"openPublish": "Publish",
-		"pcOnlyNotice": {
-			"confirm": "Confirm",
-			"description": "Please use the desktop version to edit your Digital Crew",
-			"message": "Please create or edit on the desktop app.",
-			"title": "Editing unavailable on mobile"
-		},
-		"sharedByTeamAction": "Share within team",
-		"sourceCustom": "Custom",
-		"sourceStore": "Store",
-		"subtitle": "Manage your own digital crew.",
-		"title": "My Crew",
-		"upgradeAvailable": "Upgrade available. Tap to update."
-	},
-	"mySkills": {
-		"badges": {
-			"unpublished": "Unpublished"
-		},
-		"creatorUnknown": "@Unknown",
-		"delete": "Delete",
-		"deleteConfirm": {
-			"confirm": "Delete",
-			"description": "Once deleted, this skill cannot be recovered. Please proceed with caution.",
-			"title": "Delete \"{{name}}\""
-		},
-		"edit": "Edit",
-		"moreActionsAria": "More actions",
-		"noDescription": "No description",
-		"pcOnlyNotice": {
-			"confirm": "Confirm",
-			"description": "Please use the desktop version to edit your skills",
-			"title": "Editing not available on mobile"
-		},
-		"poweredBy": "Powered by {{name}}",
-		"remove": "Remove",
-		"subscribe": "Subscribe",
-		"subtitle": "Your personalized collection of specialized professional expertise.",
-		"tabs": {
-			"createdByMe": "Created by Me",
-			"fromSkillsLibrary": "From Skills Library",
-			"sharedByTeam": "Shared by Team"
-		},
-		"title": "My Skills",
-		"topUp": "Top Up",
-		"unknownUpdatedAt": "Update time unavailable",
-		"untitledSkill": "Untitled Skill",
-		"update": "Update",
-		"updatedAt": "Updated on {{date}}"
-	},
-	"noMoreData": "No more data.",
-	"noResults": "No results found.",
-	"skillEditPage": {
-		"actions": {
-			"publish": "Publish",
-			"settings": "Setting",
-			"unpublishedChanges": "Unpublished Changes"
-		},
-		"conversation": {
-			"placeholder": "Describe a skill to start building, e.g. \"Create a data analysis skill\"",
-			"subtitle": "Transform your ideas into executable professional skills with just a single sentence.",
-			"title": "Chat to Build Great Skills"
-		},
-		"files": {
-			"multiSelect": "Select files",
-			"newFile": "New file",
-			"newFolder": "New folder",
-			"refresh": "Refresh files",
-			"search": "Search files",
-			"title": "Files",
-			"upload": "Upload files"
-		},
-		"mock": {
-			"assetsFolder": "assets",
-			"projectName": "heartwarming-content-creator",
-			"referencesFolder": "references",
-			"skillDescription": "Create warm, high-conversion content concepts for brands and creators.",
-			"skillFileName": "Skill.md",
-			"skillName": "Heartwarming Content Creator",
-			"topicTitle": "Untitled Topic 1"
-		},
-		"publishNameDialog": {
-			"confirm": "Confirm and continue",
-			"description": "",
-			"placeholder": "Enter skill name",
-			"required": "Please enter a skill name",
-			"title": "Name the skill before publishing"
-		},
-		"publishPanel": {
-			"actions": {
-				"cancel": "Cancel",
-				"publish": "Publish"
-			},
-			"create": {
-				"fields": {
-					"details": {
-						"label": "Version Details",
-						"optional": "Optional",
-						"placeholder": "Enter Version Details"
-					},
-					"permissionSettings": {
-						"label": "Permission Settings"
-					},
-					"publishingProcess": {
-						"label": "Publishing Process"
-					},
-					"target": {
-						"helper": "Once selected, the publishing scope cannot be changed",
-						"label": "Publish to",
-						"skillsLibrary": {
-							"steps": {
-								"published": "Published to Skills Library",
-								"review": "Platform Review",
-								"submit": "Submit Skill"
-							}
-						},
-						"specificMembers": {
-							"action": "Select",
-							"label": "Select Specific Department/Member",
-							"mockValue": "Marketing / Content Team",
-							"placeholder": "Please Select"
-						}
-					},
-					"version": {
-						"label": "Version",
-						"placeholder": "Enter Version",
-						"required": "Required"
-					}
-				},
-				"title": "Publish New Version"
-			},
-			"detail": {
-				"noContent": "No content",
-				"reason": "Reason",
-				"reviewFailed": "Review Failed",
-				"skillsLibrary": {
-					"steps": {
-						"published": "Published to Skills Library",
-						"review": "Platform Review",
-						"submit": "Submit Application"
-					}
-				},
-				"title": "Version {{version}}"
-			},
-			"emptyValue": "—",
-			"errors": {
-				"loadVersionsFailed": "Could not load publish history. Please try again."
-			},
-			"history": {
-				"columns": {
-					"actions": "Actions",
-					"publishTo": "Publish to",
-					"publishedDate": "Published Date",
-					"publisher": "Publisher",
-					"status": "Status",
-					"version": "Version"
-				},
-				"empty": {
-					"description": "After creation, all changes need to be published to take effect",
-					"title": "No versions published yet"
-				},
-				"publishNewVersion": "Publish New Version",
-				"title": "Publish",
-				"unpublishedChanges": "You have unpublished changes, Publish to make them live.",
-				"view": "View"
-			},
-			"publishToOptions": {
-				"crew_market": {
-					"description": "Once published, it will be listed in the Crew Market for everyone to view",
-					"label": "Publish to Crew Market"
-				},
-				"internal": {
-					"description": "Once published, it will only be available to internal members",
-					"label": "Publish Internally"
-				},
-				"skills_library": {
-					"description": "Once published, it will be available to everyone",
-					"label": "Publish to Skills Library"
-				}
-			},
-			"statuses": {
-				"published": "Published",
-				"rejected": "Rejected",
-				"under_review": "Under Review"
-			},
-			"targets": {
-				"crew_market": {
-					"description": "Requires platform review and approval before being published to the Crew Market",
-					"label": "Crew Market"
-				},
-				"organization": {
-					"description": "Available to all organization members",
-					"label": "Organization-wide"
-				},
-				"private": {
-					"description": "Only visible to you",
-					"label": "Private"
-				},
-				"skills_library": {
-					"description": "Requires platform review and approval before being published to the Skills Library",
-					"label": "Skills Library"
-				},
-				"specific_members": {
-					"description": "Available to selected departments/members within the organization",
-					"label": "Specific Members"
-				}
-			},
-			"toast": {
-				"publishFailed": "Publish failed. Please try again.",
-				"publishSuccess": "Published successfully"
-			}
-		},
-		"untitledSkill": "Untitled Skill"
-	},
-	"skillsLibrary": {
-		"addToMySkills": "Add to My Skills",
-		"added": "Added",
-		"aiSearchPlaceholder": "Enter keywords or describe the skills you need",
-		"authorFallback": "Username",
-		"createMenu": {
-			"createViaChat": "Create via Chat",
-			"createViaChatDesc": "Build amazing skills through conversation",
-			"createViaChatFailed": "Failed to create skill. Please try again.",
-			"importFromGithub": "Import from Github",
-			"importFromGithubDesc": "Import skills directly from public GitHub repositories",
-			"importSkill": "Import Skill",
-			"importSkillDesc": "Upload .Skill, .Zip or folder"
-		},
-		"createSkill": "Create Skill",
-		"mySkills": "My Skills",
-		"noMoreData": "No more data.",
-		"official": "Official",
-		"removeFromMySkills": "Remove from My Skills",
-		"searchAria": "Search skills",
-		"searchSheetTitle": "Search skills",
-		"subtitle": "Discover new capabilities and equip your digital crew.",
-		"title": "Skills Library",
-		"updatedAt": "Updated on {{dateTime}}",
-		"upgrade": "Upgrade"
-	},
-	"subtitle": "Discover and hire your exclusive digital crew.",
-	"tabs": {
-		"crewMarket": "Crew Market",
-		"skillsLibrary": "Skills Library"
-	},
-	"title": "Crew Market",
-	"updateSkill": {
-		"cancel": "Cancel",
-		"continue": "Continue",
-		"description": "The imported Skill (name: {{name}}) already exists. Would you like to update it with the new version?",
-		"done": "Skill updated successfully!",
-		"errors": {
-			"parseFailed": "Failed to parse skill file. Please check the file format.",
-			"updateFailed": "Failed to update skill. Please try again later."
-		},
-		"title": "Update Skill"
-	}
+  "aiSearch": "AI-поиск",
+  "aiSearchPlaceholder": "Введите ключевые слова или опишите свои потребности, чтобы найти нужного цифрового сотрудника",
+  "back": "Назад",
+  "categories": {
+    "adminOps": "Администрирование и операции",
+    "allCrew": "Вся команда",
+    "creativeContent": "Креатив и контент",
+    "dataInsights": "Данные и аналитика",
+    "legalCompliance": "Право и соответствие",
+    "marketingGrowth": "Маркетинг и рост",
+    "salesBusiness": "Продажи и бизнес",
+    "starCrew": "Избранная команда",
+    "techDev": "Технологии и разработка"
+  },
+  "createCrew": "Создать Crew",
+  "detailDialog": {
+    "emptyName": "Crew без названия",
+    "emptyPlaybook": "Плейбуки недоступны",
+    "emptyRole": "Участник цифровой команды",
+    "loadFailed": "Не удалось загрузить сведения о Crew. Пожалуйста, попробуйте снова.",
+    "retry": "Повторить"
+  },
+  "details": "Подробности",
+  "dismiss": "Уволить",
+  "editCrew": {
+    "actions": {
+      "upload": "Загрузить"
+    },
+    "buttons": {
+      "cancel": "Отмена",
+      "confirm": "Сохранить"
+    },
+    "done": "Crew успешно обновлён!",
+    "errors": {
+      "saveFailed": "Не удалось сохранить Crew. Пожалуйста, попробуйте снова."
+    },
+    "fields": {
+      "avatar": "Аватар"
+    },
+    "title": "Редактировать Crew"
+  },
+  "editSkill": {
+    "buttons": {
+      "cancel": "Отмена",
+      "confirm": "Сохранить"
+    },
+    "done": "Навык успешно обновлён!",
+    "errors": {
+      "fetchFailed": "Не удалось загрузить сведения о навыке. Пожалуйста, попробуйте снова.",
+      "saveFailed": "Не удалось сохранить навык. Пожалуйста, попробуйте снова."
+    },
+    "placeholders": {
+      "description": "Введите описание навыка",
+      "name": "Введите название навыка"
+    },
+    "title": "Редактировать навык"
+  },
+  "employeeCard": {
+    "createdByYouNoHiringNeeded": "Создано вами, нанимать не нужно",
+    "hired": "Нанят",
+    "officialBuiltin": "Официальный встроенный",
+    "publisherDefault": "Издатель",
+    "publisherOfficial": "MagiCrew",
+    "publisherPartner": "Партнёр",
+    "publisherUser": "Сообщество",
+    "publisherVerified": "Проверенный автор"
+  },
+  "hire": "Нанять",
+  "importSkill": {
+    "buttons": {
+      "back": "Назад",
+      "cancel": "Отмена",
+      "confirm": "Подтвердить",
+      "next": "Далее"
+    },
+    "done": "Навык успешно импортирован!",
+    "errors": {
+      "archiveFailed": "Не удалось архивировать папку. Пожалуйста, попробуйте позже.",
+      "emptyFolder": "Папка пуста и не может быть импортирована.",
+      "importFailed": "Не удалось импортировать навык. Пожалуйста, попробуйте позже.",
+      "parseFailed": "Не удалось разобрать файл навыка. Проверьте формат файла.",
+      "singleItemOnly": "Одновременно можно перетаскивать только один файл или папку."
+    },
+    "fileUpload": {
+      "browseEntry": "Выбрать файл/папку",
+      "browseFiles": "Выбрать файлы",
+      "browseFolder": "Выбрать папку",
+      "browseHint": "Или нажмите, чтобы выбрать файл или папку (импорт по 1 элементу за раз, файлы должны быть в формате .zip или .skill)",
+      "dragDrop": "Перетащите сюда файл или папку",
+      "fileRequirement": "Загружаемые файлы должны быть в формате .zip или .skill"
+    },
+    "identity": {
+      "description": "Описание",
+      "icon": "Иконка",
+      "skillName": "Название навыка",
+      "upload": "Загрузить"
+    },
+    "processing": "Анализ файла навыка...",
+    "publishPrompt": {
+      "cancel": "Не сейчас",
+      "confirm": "Опубликовать",
+      "description": "После создания или обновления навыка его нужно опубликовать, прежде чем он станет доступен для использования. Хотите опубликовать его сейчас?",
+      "title": "Опубликовать навык сейчас?"
+    },
+    "steps": {
+      "completeInfo": "Заполнить информацию о навыке",
+      "skillFile": "Выбрать файл навыка"
+    },
+    "title": "Импорт навыка"
+  },
+  "localizeIdentity": {
+    "cancel": "Отмена",
+    "confirm": "Подтвердить",
+    "english": "Английский",
+    "fallbackHint": "Языки, оставленные пустыми, будут автоматически использовать исходный (по умолчанию) контент.",
+    "originalDefault": "Исходный (по умолчанию)",
+    "simplifiedChinese": "Упрощённый китайский",
+    "tabs": {
+      "description": "Описание",
+      "name": "Название",
+      "role": "Роль"
+    },
+    "title": "Локализация: идентичность",
+    "usingDefault": "Используется значение по умолчанию"
+  },
+  "mobile": {
+    "runSearch": "Поиск",
+    "searchSheetTitle": "Поиск Crew"
+  },
+  "myCrew": "Моя Crew",
+  "myCrewPage": {
+    "badgeUpdated": "Обновлено",
+    "crewType": {
+      "ariaLabel": "Тип Crew",
+      "createdByMe": "Создано мной",
+      "hiredByMe": "Нанято мной"
+    },
+    "delete": "Удалить",
+    "deleteConfirm": {
+      "confirm": "Удалить",
+      "description": "После удаления участника Digital Crew восстановить его будет невозможно. Пожалуйста, действуйте осторожно.",
+      "title": "Удалить \"{{name}}\""
+    },
+    "disable": "Отключить",
+    "disableConfirm": {
+      "confirm": "Отключить",
+      "description": "После отключения этот участник Digital Crew перестанет быть доступным для текущей команды. Позже вы сможете снова изменить это в управлении публикацией.",
+      "title": "Отключить \"{{name}}\""
+    },
+    "dismissConfirm": {
+      "confirm": "Уволить",
+      "description": "Вы уверены, что хотите уволить этого участника Digital Crew? Вы сможете нанять его снова позже.",
+      "title": "Уволить \"{{name}}\""
+    },
+    "edit": "Редактировать",
+    "empty": "Пока нет Crew. Создайте свою первую Crew прямо сейчас.",
+    "footerPoweredByBrand": "MagiCrew",
+    "footerPoweredByLead": "Работает на базе",
+    "footerPoweredByTail": "",
+    "footerPublisherHandle": "@MagiCrew",
+    "moreActionsAria": "Дополнительные действия",
+    "openConversation": "Чат",
+    "openPublish": "Публикация",
+    "pcOnlyNotice": {
+      "confirm": "Подтвердить",
+      "description": "Пожалуйста, используйте настольную версию для редактирования вашей Digital Crew",
+      "message": "Пожалуйста, создавайте или редактируйте в настольном приложении.",
+      "title": "Редактирование недоступно на мобильных устройствах"
+    },
+    "sharedByTeamAction": "Поделиться с командой",
+    "sourceCustom": "Пользовательский",
+    "sourceStore": "Магазин",
+    "subtitle": "Управляйте своей собственной цифровой командой.",
+    "title": "Моя Crew",
+    "upgradeAvailable": "Доступно обновление. Нажмите, чтобы обновить."
+  },
+  "mySkills": {
+    "badges": {
+      "unpublished": "Не опубликовано"
+    },
+    "creatorUnknown": "@Unknown",
+    "delete": "Удалить",
+    "deleteConfirm": {
+      "confirm": "Удалить",
+      "description": "После удаления восстановить этот навык будет невозможно. Пожалуйста, действуйте осторожно.",
+      "title": "Удалить \"{{name}}\""
+    },
+    "edit": "Редактировать",
+    "moreActionsAria": "Дополнительные действия",
+    "noDescription": "Нет описания",
+    "pcOnlyNotice": {
+      "confirm": "Подтвердить",
+      "description": "Пожалуйста, используйте настольную версию для редактирования своих навыков",
+      "title": "Редактирование недоступно на мобильных устройствах"
+    },
+    "poweredBy": "Работает на базе {{name}}",
+    "remove": "Удалить",
+    "subscribe": "Подписаться",
+    "subtitle": "Ваша персонализированная коллекция специализированной профессиональной экспертизы.",
+    "tabs": {
+      "createdByMe": "Создано мной",
+      "fromSkillsLibrary": "Из Skills Library",
+      "sharedByTeam": "Поделились в команде"
+    },
+    "title": "Мои навыки",
+    "topUp": "Пополнить",
+    "unknownUpdatedAt": "Время обновления недоступно",
+    "untitledSkill": "Навык без названия",
+    "update": "Обновить",
+    "updatedAt": "Обновлено {{date}}"
+  },
+  "noMoreData": "Больше данных нет.",
+  "noResults": "Ничего не найдено.",
+  "skillEditPage": {
+    "actions": {
+      "publish": "Опубликовать",
+      "settings": "Настройка",
+      "unpublishedChanges": "Неопубликованные изменения"
+    },
+    "conversation": {
+      "placeholder": "Опишите навык, чтобы начать создание, например: \"Создай навык для анализа данных\"",
+      "subtitle": "Превращайте свои идеи в исполняемые профессиональные навыки всего одной фразой.",
+      "title": "Чат для создания отличных навыков"
+    },
+    "files": {
+      "multiSelect": "Выбрать файлы",
+      "newFile": "Новый файл",
+      "newFolder": "Новая папка",
+      "refresh": "Обновить файлы",
+      "search": "Поиск файлов",
+      "title": "Файлы",
+      "upload": "Загрузить файлы"
+    },
+    "mock": {
+      "assetsFolder": "assets",
+      "projectName": "heartwarming-content-creator",
+      "referencesFolder": "references",
+      "skillDescription": "Создавайте тёплые, высококонверсионные контент-концепции для брендов и авторов.",
+      "skillFileName": "Skill.md",
+      "skillName": "Создатель душевного контента",
+      "topicTitle": "Тема без названия 1"
+    },
+    "publishNameDialog": {
+      "confirm": "Подтвердить и продолжить",
+      "description": "",
+      "placeholder": "Введите название навыка",
+      "required": "Пожалуйста, введите название навыка",
+      "title": "Назовите навык перед публикацией"
+    },
+    "publishPanel": {
+      "actions": {
+        "cancel": "Отмена",
+        "publish": "Опубликовать"
+      },
+      "create": {
+        "fields": {
+          "details": {
+            "label": "Сведения о версии",
+            "optional": "Необязательно",
+            "placeholder": "Введите сведения о версии"
+          },
+          "permissionSettings": {
+            "label": "Настройки разрешений"
+          },
+          "publishingProcess": {
+            "label": "Процесс публикации"
+          },
+          "target": {
+            "helper": "После выбора область публикации нельзя будет изменить",
+            "label": "Опубликовать в",
+            "skillsLibrary": {
+              "steps": {
+                "published": "Опубликовано в Skills Library",
+                "review": "Проверка платформой",
+                "submit": "Отправить навык"
+              }
+            },
+            "specificMembers": {
+              "action": "Выбрать",
+              "label": "Выберите конкретный отдел/участника",
+              "mockValue": "Маркетинг / Контент-команда",
+              "placeholder": "Пожалуйста, выберите"
+            }
+          },
+          "version": {
+            "label": "Версия",
+            "placeholder": "Введите версию",
+            "required": "Обязательно"
+          }
+        },
+        "title": "Опубликовать новую версию"
+      },
+      "detail": {
+        "noContent": "Нет содержимого",
+        "reason": "Причина",
+        "reviewFailed": "Проверка не пройдена",
+        "skillsLibrary": {
+          "steps": {
+            "published": "Опубликовано в Skills Library",
+            "review": "Проверка платформой",
+            "submit": "Отправить заявку"
+          }
+        },
+        "title": "Версия {{version}}"
+      },
+      "emptyValue": "—",
+      "errors": {
+        "loadVersionsFailed": "Не удалось загрузить историю публикаций. Пожалуйста, попробуйте снова."
+      },
+      "history": {
+        "columns": {
+          "actions": "Действия",
+          "publishTo": "Опубликовать в",
+          "publishedDate": "Дата публикации",
+          "publisher": "Издатель",
+          "status": "Статус",
+          "version": "Версия"
+        },
+        "empty": {
+          "description": "После создания все изменения нужно опубликовать, чтобы они вступили в силу",
+          "title": "Пока нет опубликованных версий"
+        },
+        "publishNewVersion": "Опубликовать новую версию",
+        "title": "Публикация",
+        "unpublishedChanges": "У вас есть неопубликованные изменения. Опубликуйте их, чтобы они стали доступны.",
+        "view": "Просмотр"
+      },
+      "publishToOptions": {
+        "crew_market": {
+          "description": "После публикации навык будет отображаться в Crew Market и станет доступен для просмотра всем",
+          "label": "Опубликовать в Crew Market"
+        },
+        "internal": {
+          "description": "После публикации навык будет доступен только внутренним участникам",
+          "label": "Опубликовать внутри организации"
+        },
+        "skills_library": {
+          "description": "После публикации навык станет доступен всем",
+          "label": "Опубликовать в Skills Library"
+        }
+      },
+      "statuses": {
+        "published": "Опубликовано",
+        "rejected": "Отклонено",
+        "under_review": "На проверке"
+      },
+      "targets": {
+        "crew_market": {
+          "description": "Требуется проверка и одобрение платформы перед публикацией в Crew Market",
+          "label": "Crew Market"
+        },
+        "organization": {
+          "description": "Доступно всем участникам организации",
+          "label": "Для всей организации"
+        },
+        "private": {
+          "description": "Видно только вам",
+          "label": "Личное"
+        },
+        "skills_library": {
+          "description": "Требуется проверка и одобрение платформы перед публикацией в Skills Library",
+          "label": "Skills Library"
+        },
+        "specific_members": {
+          "description": "Доступно выбранным отделам/участникам внутри организации",
+          "label": "Конкретные участники"
+        }
+      },
+      "toast": {
+        "publishFailed": "Не удалось опубликовать. Пожалуйста, попробуйте снова.",
+        "publishSuccess": "Успешно опубликовано"
+      }
+    },
+    "untitledSkill": "Навык без названия"
+  },
+  "skillsLibrary": {
+    "addToMySkills": "Добавить в Мои навыки",
+    "added": "Добавлено",
+    "aiSearchPlaceholder": "Введите ключевые слова или опишите нужные навыки",
+    "authorFallback": "Имя пользователя",
+    "createMenu": {
+      "createViaChat": "Создать через чат",
+      "createViaChatDesc": "Создавайте впечатляющие навыки в диалоге",
+      "createViaChatFailed": "Не удалось создать навык. Пожалуйста, попробуйте снова.",
+      "importFromGithub": "Импортировать из Github",
+      "importFromGithubDesc": "Импортируйте навыки напрямую из публичных репозиториев GitHub",
+      "importSkill": "Импортировать навык",
+      "importSkillDesc": "Загрузите .Skill, .Zip или папку"
+    },
+    "createSkill": "Создать навык",
+    "mySkills": "Мои навыки",
+    "noMoreData": "Больше данных нет.",
+    "official": "Официальный",
+    "removeFromMySkills": "Удалить из Моих навыков",
+    "searchAria": "Поиск навыков",
+    "searchSheetTitle": "Поиск навыков",
+    "subtitle": "Открывайте новые возможности и расширяйте возможности своей цифровой команды.",
+    "title": "Skills Library",
+    "updatedAt": "Обновлено {{dateTime}}",
+    "upgrade": "Обновить"
+  },
+  "subtitle": "Находите и нанимайте свою эксклюзивную цифровую команду.",
+  "tabs": {
+    "crewMarket": "Crew Market",
+    "skillsLibrary": "Skills Library"
+  },
+  "title": "Crew Market",
+  "updateSkill": {
+    "cancel": "Отмена",
+    "continue": "Продолжить",
+    "description": "Импортированный навык (название: {{name}}) уже существует. Хотите обновить его до новой версии?",
+    "done": "Навык успешно обновлён!",
+    "errors": {
+      "parseFailed": "Не удалось разобрать файл навыка. Проверьте формат файла.",
+      "updateFailed": "Не удалось обновить навык. Пожалуйста, попробуйте позже."
+    },
+    "title": "Обновить навык"
+  }
 }
