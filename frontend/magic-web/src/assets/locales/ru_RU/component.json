@@ -1,188 +1,188 @@
 {
-	"freePointsReward": {
-		"description": "Today's reward points expire at midnight. Come back tomorrow for more!",
-		"pointsCredited": "Points Credited",
-		"title": "Login Reward",
-		"useNow": "Use Now"
-	},
-	"magicDatePicker": {
-		"selectDate": "Select date"
-	},
-	"magicDocxRender": {
-		"actions": {
-			"download": "Download File",
-			"fullscreen": "Toggle Fullscreen",
-			"reload": "Reload"
-		},
-		"dropdown": {
-			"download": "Download",
-			"fullscreen": "Fullscreen",
-			"navigation": "Navigation",
-			"nextSection": "Next Section",
-			"prevSection": "Previous Section",
-			"reload": "Reload",
-			"zoomIn": "Zoom In",
-			"zoomOut": "Zoom Out",
-			"zoomScale": "Zoom:"
-		},
-		"error": {
-			"failedToLoad": "Failed to load DOCX file",
-			"networkError": "Network Error",
-			"renderError": "Render Error",
-			"unknown": "Unknown Error"
-		},
-		"navigation": {
-			"nextSection": "Next Section",
-			"prevSection": "Previous Section",
-			"sectionInfo": "Section {{current}} of {{total}}",
-			"sectionInput": "Section Number"
-		},
-		"status": {
-			"downloadUnavailable": "Unable to download this document",
-			"fileTooLarge": "File too large. Maximum size is 50MB.",
-			"invalidFileType": "Invalid file type. Only .docx files are supported.",
-			"loadFailed": "Failed to load, please try again",
-			"loading": "Loading DOCX file...",
-			"loadingProgress": "Loading Progress",
-			"noFile": "Please select a DOCX file to preview",
-			"retry": "Retry",
-			"sectionLoadFailed": "Section failed to load"
-		},
-		"toolbar": {
-			"download": "Download",
-			"fullscreen": "Fullscreen (F11)",
-			"moreActions": "More Actions",
-			"nextSection": "Next Section (→)",
-			"prevSection": "Previous Section (←)",
-			"reload": "Reload",
-			"zoomIn": "Zoom In (+)",
-			"zoomOut": "Zoom Out (-)"
-		},
-		"zoom": {
-			"scaleInput": "Scale Input",
-			"zoomIn": "Zoom In",
-			"zoomOut": "Zoom Out",
-			"zoomScale": "Zoom Scale"
-		}
-	},
-	"magicPdfRender": {
-		"dropdown": {
-			"download": "Download",
-			"fullscreen": "Fullscreen",
-			"pageNav": "Page:",
-			"reload": "Reload",
-			"rotateLeft": "Rotate Left",
-			"rotateRight": "Rotate Right",
-			"zoom": "Zoom:",
-			"zoomIn": "Zoom In",
-			"zoomOut": "Zoom Out"
-		},
-		"pageInfo": {
-			"currentPage": "Page {{current}}",
-			"pageNumber": "Page",
-			"scale": "Scale",
-			"totalPages": "of {{total}}"
-		},
-		"placeholders": {
-			"pageNumber": "Page {{number}}",
-			"scrollToLoad": "Scroll here to load"
-		},
-		"status": {
-			"downloadUnavailable": "Unable to download this document",
-			"loadFailed": "Failed to load, please try again",
-			"loading": "Loading...",
-			"loadingProgress": "Loading Progress",
-			"noFile": "Please select a PDF file to preview",
-			"pageLoadFailed": "Page failed to load",
-			"retry": "Retry"
-		},
-		"toolbar": {
-			"download": "Download",
-			"fullscreen": "Fullscreen (F11)",
-			"moreActions": "More Actions",
-			"nextPage": "Next Page (→)",
-			"prevPage": "Previous Page (←)",
-			"reload": "Reload",
-			"rotateLeft": "Rotate Left",
-			"rotateRight": "Rotate Right",
-			"zoomIn": "Zoom In (+)",
-			"zoomOut": "Zoom Out (-)"
-		}
-	},
-	"magicTimePicker": {
-		"selectTime": "Select time"
-	},
-	"mcpInitTool": {
-		"countUnit": "items",
-		"initFailed": "Initialization Failed",
-		"initSuccess": "Initialization Success"
-	},
-	"mcpTool": {
-		"parameters": "Parameters",
-		"result": "Result"
-	},
-	"voiceInput": {
-		"button": {
-			"back": "Back",
-			"cancel": "Cancel",
-			"convertToText": "Convert to text",
-			"pressToSpeak": "Press and hold to speak",
-			"sendText": "Send text",
-			"sendVoice": "Send original voice"
-		},
-		"error": {
-			"microphoneAccessFailed": "Failed to access microphone",
-			"microphoneNotFound": "Microphone device not found",
-			"microphoneNotReadable": "Microphone device is occupied or cannot be accessed",
-			"microphoneNotSupported": "Current browser does not support recording functionality",
-			"microphoneOverconstrained": "Microphone device does not support the required audio format",
-			"microphonePermissionDenied": "Microphone permission denied. Please allow microphone access in settings.",
-			"microphoneSecurityError": "Recording requires HTTPS environment"
-		},
-		"permission": {
-			"instructions": {
-				"app": {
-					"android": "Settings → App Permissions → Microphone → Magic → Allow",
-					"default": "Please find app permission management in phone settings and allow Magic app to access microphone",
-					"ios": "Settings → Privacy & Security → Microphone → Magic → Allow"
-				},
-				"browser": {
-					"chrome": "Click the lock icon on the left side of the address bar → Select \"Site Settings\" → Allow microphone permission",
-					"default": "Please find privacy or permission settings in your browser settings and allow this site to access the microphone",
-					"edge": "Click the lock icon on the left side of the address bar → Select \"Permissions\" → Allow microphone permission",
-					"firefox": "Click the shield or lock icon on the left side of the address bar → Select \"Permissions\" → Allow microphone permission",
-					"safari": "Safari Menu → Preferences → Websites → Microphone → Select this site and allow access"
-				}
-			},
-			"modal": {
-				"app": {
-					"cancelText": "Cancel",
-					"content": "This feature requires access to your microphone. Please allow microphone permission in phone settings.",
-					"manualInstruction": "Please allow Magic app to access microphone in phone settings and try again.",
-					"okText": "Open Settings",
-					"title": "Microphone Permission Required"
-				},
-				"browser": {
-					"cancelText": "Cancel",
-					"content": "This feature requires access to your microphone. Please follow these steps to allow microphone permission in browser settings:",
-					"manualInstruction": "After completing the settings, please refresh the page and try again.",
-					"okText": "Got it",
-					"title": "Microphone Permission Required"
-				}
-			}
-		},
-		"placeholder": {
-			"textInput": "Type your message..."
-		},
-		"status": {
-			"releaseToCancel": "Release to cancel sending",
-			"releaseToSend": "Release to send"
-		},
-		"tooltip": {
-			"default": "Voice input",
-			"error": "Voice service error",
-			"idle": "Start voice input",
-			"recording": "Stop voice input"
-		}
-	}
+  "freePointsReward": {
+    "description": "Сегодняшние бонусные баллы сгорят в полночь. Возвращайтесь завтра за новыми!",
+    "pointsCredited": "Баллы начислены",
+    "title": "Награда за вход",
+    "useNow": "Использовать сейчас"
+  },
+  "magicDatePicker": {
+    "selectDate": "Выберите дату"
+  },
+  "magicDocxRender": {
+    "actions": {
+      "download": "Скачать файл",
+      "fullscreen": "Переключить полноэкранный режим",
+      "reload": "Обновить"
+    },
+    "dropdown": {
+      "download": "Скачать",
+      "fullscreen": "Во весь экран",
+      "navigation": "Навигация",
+      "nextSection": "Следующий раздел",
+      "prevSection": "Предыдущий раздел",
+      "reload": "Обновить",
+      "zoomIn": "Увеличить",
+      "zoomOut": "Уменьшить",
+      "zoomScale": "Масштаб:"
+    },
+    "error": {
+      "failedToLoad": "Не удалось загрузить файл DOCX",
+      "networkError": "Ошибка сети",
+      "renderError": "Ошибка рендеринга",
+      "unknown": "Неизвестная ошибка"
+    },
+    "navigation": {
+      "nextSection": "Следующий раздел",
+      "prevSection": "Предыдущий раздел",
+      "sectionInfo": "Раздел {{current}} из {{total}}",
+      "sectionInput": "Номер раздела"
+    },
+    "status": {
+      "downloadUnavailable": "Невозможно скачать этот документ",
+      "fileTooLarge": "Файл слишком большой. Максимальный размер — 50 МБ.",
+      "invalidFileType": "Недопустимый тип файла. Поддерживаются только файлы .docx.",
+      "loadFailed": "Не удалось загрузить, попробуйте еще раз",
+      "loading": "Загрузка файла DOCX...",
+      "loadingProgress": "Ход загрузки",
+      "noFile": "Выберите файл DOCX для предварительного просмотра",
+      "retry": "Повторить",
+      "sectionLoadFailed": "Не удалось загрузить раздел"
+    },
+    "toolbar": {
+      "download": "Скачать",
+      "fullscreen": "Во весь экран (F11)",
+      "moreActions": "Другие действия",
+      "nextSection": "Следующий раздел (→)",
+      "prevSection": "Предыдущий раздел (←)",
+      "reload": "Обновить",
+      "zoomIn": "Увеличить (+)",
+      "zoomOut": "Уменьшить (-)"
+    },
+    "zoom": {
+      "scaleInput": "Поле масштаба",
+      "zoomIn": "Увеличить",
+      "zoomOut": "Уменьшить",
+      "zoomScale": "Масштаб"
+    }
+  },
+  "magicPdfRender": {
+    "dropdown": {
+      "download": "Скачать",
+      "fullscreen": "Во весь экран",
+      "pageNav": "Страница:",
+      "reload": "Обновить",
+      "rotateLeft": "Повернуть влево",
+      "rotateRight": "Повернуть вправо",
+      "zoom": "Масштаб:",
+      "zoomIn": "Увеличить",
+      "zoomOut": "Уменьшить"
+    },
+    "pageInfo": {
+      "currentPage": "Страница {{current}}",
+      "pageNumber": "Страница",
+      "scale": "Масштаб",
+      "totalPages": "из {{total}}"
+    },
+    "placeholders": {
+      "pageNumber": "Страница {{number}}",
+      "scrollToLoad": "Прокрутите сюда для загрузки"
+    },
+    "status": {
+      "downloadUnavailable": "Невозможно скачать этот документ",
+      "loadFailed": "Не удалось загрузить, попробуйте еще раз",
+      "loading": "Загрузка...",
+      "loadingProgress": "Ход загрузки",
+      "noFile": "Выберите PDF-файл для предварительного просмотра",
+      "pageLoadFailed": "Не удалось загрузить страницу",
+      "retry": "Повторить"
+    },
+    "toolbar": {
+      "download": "Скачать",
+      "fullscreen": "Во весь экран (F11)",
+      "moreActions": "Другие действия",
+      "nextPage": "Следующая страница (→)",
+      "prevPage": "Предыдущая страница (←)",
+      "reload": "Обновить",
+      "rotateLeft": "Повернуть влево",
+      "rotateRight": "Повернуть вправо",
+      "zoomIn": "Увеличить (+)",
+      "zoomOut": "Уменьшить (-)"
+    }
+  },
+  "magicTimePicker": {
+    "selectTime": "Выберите время"
+  },
+  "mcpInitTool": {
+    "countUnit": "элементов",
+    "initFailed": "Ошибка инициализации",
+    "initSuccess": "Инициализация выполнена успешно"
+  },
+  "mcpTool": {
+    "parameters": "Параметры",
+    "result": "Результат"
+  },
+  "voiceInput": {
+    "button": {
+      "back": "Назад",
+      "cancel": "Отмена",
+      "convertToText": "Преобразовать в текст",
+      "pressToSpeak": "Нажмите и удерживайте, чтобы говорить",
+      "sendText": "Отправить текст",
+      "sendVoice": "Отправить исходное голосовое сообщение"
+    },
+    "error": {
+      "microphoneAccessFailed": "Не удалось получить доступ к микрофону",
+      "microphoneNotFound": "Устройство микрофона не найдено",
+      "microphoneNotReadable": "Микрофон занят или недоступен",
+      "microphoneNotSupported": "Текущий браузер не поддерживает запись",
+      "microphoneOverconstrained": "Микрофон не поддерживает требуемый аудиоформат",
+      "microphonePermissionDenied": "Доступ к микрофону запрещен. Разрешите доступ к микрофону в настройках.",
+      "microphoneSecurityError": "Для записи требуется среда HTTPS"
+    },
+    "permission": {
+      "instructions": {
+        "app": {
+          "android": "Настройки → Разрешения приложений → Микрофон → Magic → Разрешить",
+          "default": "Найдите управление разрешениями приложений в настройках телефона и разрешите приложению Magic доступ к микрофону",
+          "ios": "Настройки → Конфиденциальность и безопасность → Микрофон → Magic → Разрешить"
+        },
+        "browser": {
+          "chrome": "Нажмите на значок замка слева в адресной строке → выберите \"Настройки сайта\" → разрешите доступ к микрофону",
+          "default": "Найдите настройки конфиденциальности или разрешений в браузере и разрешите этому сайту доступ к микрофону",
+          "edge": "Нажмите на значок замка слева в адресной строке → выберите \"Разрешения\" → разрешите доступ к микрофону",
+          "firefox": "Нажмите на значок щита или замка слева в адресной строке → выберите \"Разрешения\" → разрешите доступ к микрофону",
+          "safari": "Меню Safari → Настройки → Веб-сайты → Микрофон → выберите этот сайт и разрешите доступ"
+        }
+      },
+      "modal": {
+        "app": {
+          "cancelText": "Отмена",
+          "content": "Для этой функции нужен доступ к микрофону. Разрешите доступ к микрофону в настройках телефона.",
+          "manualInstruction": "Разрешите приложению Magic доступ к микрофону в настройках телефона и повторите попытку.",
+          "okText": "Открыть настройки",
+          "title": "Требуется доступ к микрофону"
+        },
+        "browser": {
+          "cancelText": "Отмена",
+          "content": "Для этой функции нужен доступ к микрофону. Выполните следующие шаги, чтобы разрешить доступ к микрофону в настройках браузера:",
+          "manualInstruction": "После изменения настроек обновите страницу и повторите попытку.",
+          "okText": "Понятно",
+          "title": "Требуется доступ к микрофону"
+        }
+      }
+    },
+    "placeholder": {
+      "textInput": "Введите сообщение..."
+    },
+    "status": {
+      "releaseToCancel": "Отпустите, чтобы отменить отправку",
+      "releaseToSend": "Отпустите, чтобы отправить"
+    },
+    "tooltip": {
+      "default": "Голосовой ввод",
+      "error": "Ошибка голосового сервиса",
+      "idle": "Начать голосовой ввод",
+      "recording": "Остановить голосовой ввод"
+    }
+  }
 }
