@@ -20,7 +20,7 @@ import {
 	type LocaleTextMap,
 } from "@/pages/superMagic/components/MainInputContainer/panels/types"
 
-const SUPPORTED_LOCALES = ["en_US", "zh_CN"] as const
+const SUPPORTED_LOCALES = ["en_US", "zh_CN", "ru_RU"] as const
 
 interface NormalizedLocaleTextMap extends LocaleTextMap {
 	default: string
@@ -38,7 +38,7 @@ export function normalizeLocaleText(text: LocaleText): NormalizedLocaleTextMap {
 	if (typeof text === "string") return { [DEFAULT_LOCALE_KEY]: text }
 
 	const fallbackDefault =
-		text[DEFAULT_LOCALE_KEY] ?? text["en_US"] ?? text["zh_CN"] ?? Object.values(text)[0] ?? ""
+		text[DEFAULT_LOCALE_KEY] ?? text["ru_RU"] ?? text["en_US"] ?? text["zh_CN"] ?? Object.values(text)[0] ?? ""
 	return { ...text, [DEFAULT_LOCALE_KEY]: fallbackDefault }
 }
 
@@ -56,6 +56,7 @@ export function getLocaleValue(text: LocaleText, locale: string): string {
 	if (baseMatch) return normalized[baseMatch]
 
 	if (isNonEmptyValue(normalized[DEFAULT_LOCALE_KEY])) return normalized[DEFAULT_LOCALE_KEY]
+	if (isNonEmptyValue(normalized["ru_RU"])) return normalized["ru_RU"]
 	if (isNonEmptyValue(normalized["en_US"])) return normalized["en_US"]
 	return Object.values(normalized).find((value) => isNonEmptyValue(value)) ?? ""
 }
@@ -105,6 +106,7 @@ export function LocaleTextInput({
 		() => ({
 			zh_CN: t("playbook.edit.basicInfo.localeDialog.localeLabels.zh_CN"),
 			en_US: t("playbook.edit.basicInfo.localeDialog.localeLabels.en_US"),
+			ru_RU: "Русский",
 		}),
 		[t],
 	)

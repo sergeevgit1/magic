@@ -35,6 +35,7 @@ export class GlobalConfigStore {
 		// Get default title (from existing i18n resources as fallback)
 		const defaultZhTitle = i18n.t("meta.title", { lng: SupportLocales.zhCN, ns: "common" })
 		const defaultEnTitle = i18n.t("meta.title", { lng: SupportLocales.enUS, ns: "common" })
+		const defaultRuTitle = i18n.t("meta.title", { lng: SupportLocales.ruRU, ns: "common" })
 
 		const defaultPlatformNameZh = i18n.t("platform.name", {
 			lng: SupportLocales.zhCN,
@@ -44,9 +45,14 @@ export class GlobalConfigStore {
 			lng: SupportLocales.enUS,
 			ns: "common",
 		})
+		const defaultPlatformNameRu = i18n.t("platform.name", {
+			lng: SupportLocales.ruRU,
+			ns: "common",
+		})
 		// Get current resource bundle, preserve other fields
 		const zhCNCommon = i18n.getResourceBundle(SupportLocales.zhCN, "common") || {}
 		const enUSCommon = i18n.getResourceBundle(SupportLocales.enUS, "common") || {}
+		const ruRUCommon = i18n.getResourceBundle(SupportLocales.ruRU, "common") || {}
 
 		// Update Chinese resources - use addResourceBundle to fully replace
 		i18n.addResourceBundle(
@@ -86,6 +92,25 @@ export class GlobalConfigStore {
 			true, // overwrite
 		)
 
+		// Update Russian resources - use addResourceBundle to fully replace
+		i18n.addResourceBundle(
+			SupportLocales.ruRU,
+			"common",
+			{
+				...ruRUCommon,
+				meta: {
+					title: config.title_i18n?.[SupportLocales.ruRU] || config.title_i18n?.[SupportLocales.enUS] || defaultRuTitle,
+					keywords: config.keywords_i18n?.[SupportLocales.ruRU] || config.keywords_i18n?.[SupportLocales.enUS] || "",
+					description: config.description_i18n?.[SupportLocales.ruRU] || config.description_i18n?.[SupportLocales.enUS] || "",
+				},
+				platform: {
+					name: config.name_i18n?.[SupportLocales.ruRU] || config.name_i18n?.[SupportLocales.enUS] || defaultPlatformNameRu,
+				},
+			},
+			true,
+			true,
+		)
+
 		i18n.emit("languageChanged", i18n.language)
 	}
 
@@ -105,6 +130,7 @@ export class GlobalConfigStore {
 				[SupportLocales.fallback]: config.logo?.[SupportLocales.fallback] || MagicCrewLogo,
 				[SupportLocales.zhCN]: config.logo?.[SupportLocales.zhCN] || MagicCrewLogo,
 				[SupportLocales.enUS]: config.logo?.[SupportLocales.enUS] || MagicCrewLogo,
+				[SupportLocales.ruRU]: config.logo?.[SupportLocales.ruRU] || config.logo?.[SupportLocales.enUS] || MagicCrewLogo,
 			},
 			favicon: config.favicon || MagicCrewLogo,
 		}

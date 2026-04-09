@@ -60,8 +60,9 @@ function TopicExampleCardsComponent({ topicMode, onCardClick }: TopicExampleCard
 						const currentLocale = i18n.language as
 							| SupportLocales.zhCN
 							| SupportLocales.enUS
-						const title = example.title[currentLocale] || example.title.zh_CN
-						const content = example.content[currentLocale] || example.content.zh_CN
+							| SupportLocales.ruRU
+						const title = example.title[currentLocale] || example.title.ru_RU || example.title.en_US || example.title.zh_CN
+						const content = example.content[currentLocale] || example.content.ru_RU || example.content.en_US || example.content.zh_CN
 
 						return (
 							<div

@@ -215,18 +215,18 @@ const TopicExamples = ({
 						onClick={() =>
 							handleSetExampleContent(
 								item.content[
-								i18n.language as SupportLocales.zhCN | SupportLocales.enUS
+								i18n.language as SupportLocales.zhCN | SupportLocales.enUS | SupportLocales.ruRU
 								],
 							)
 						}
 					>
 						<SmartTooltip className={styles.exampleItemTitle}>
-							{item.title[i18n.language as keyof typeof item.title]}
+							{item.title[i18n.language as keyof typeof item.title] || item.title.ru_RU || item.title.en_US || item.title.zh_CN}
 						</SmartTooltip>
 						<div className={styles.exampleItemContent}>
 							{getExampleContent(
 								item.content[
-								i18n.language as SupportLocales.zhCN | SupportLocales.enUS
+								i18n.language as SupportLocales.zhCN | SupportLocales.enUS | SupportLocales.ruRU
 								],
 							)}
 						</div>

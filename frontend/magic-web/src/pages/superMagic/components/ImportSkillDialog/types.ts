@@ -12,6 +12,7 @@ export function createEmptySkillI18nText(): SkillI18nText {
 		[SupportLocales.fallback]: "",
 		[SupportLocales.enUS]: "",
 		[SupportLocales.zhCN]: "",
+		[SupportLocales.ruRU]: "",
 	}
 }
 
@@ -23,6 +24,7 @@ export function normalizeSkillI18nText(
 		[SupportLocales.fallback]: value?.[SupportLocales.fallback] || fallbackText,
 		[SupportLocales.enUS]: value?.[SupportLocales.enUS] || "",
 		[SupportLocales.zhCN]: value?.[SupportLocales.zhCN] || "",
+		[SupportLocales.ruRU]: value?.[SupportLocales.ruRU] || "",
 	}
 }
 

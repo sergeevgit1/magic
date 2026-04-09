@@ -75,17 +75,34 @@ export class ConfigService {
 	private getTemporaryLanguageFromUrl(): Config.LanguageValue | null {
 		if (typeof window === "undefined") return null
 
-		try {
-			const searchParams = new URL(window.location.href).searchParams
-			const rawLanguage = searchParams.get("lang") || searchParams.get("locale")
+		const tryResolveLanguage = (rawLanguage: string | null | undefined) => {
 			if (!rawLanguage) return null
-
 			const normalizedLanguage = normalizeLocale(rawLanguage.trim())
 			if (!Object.values(SupportLocales).includes(normalizedLanguage as SupportLocales)) {
 				return null
 			}
+			return normalizedLanguage as Config.LanguageValue
+		}
 
-			return normalizedLanguage
+		try {
+			const currentUrl = new URL(window.location.href)
+			const searchParams = currentUrl.searchParams
+			const directLanguage = tryResolveLanguage(
+				searchParams.get("lang") || searchParams.get("locale"),
+			)
+			if (directLanguage) return directLanguage
+
+			const redirectUrl = searchParams.get("redirect") || searchParams.get("redirect_uri")
+			if (redirectUrl) {
+				const decodedRedirectUrl = decodeURIComponent(redirectUrl)
+				const nestedUrl = new URL(decodedRedirectUrl, currentUrl.origin)
+				const nestedLanguage = tryResolveLanguage(
+					nestedUrl.searchParams.get("lang") || nestedUrl.searchParams.get("locale"),
+				)
+				if (nestedLanguage) return nestedLanguage
+			}
+
+			return null
 		} catch (error) {
 			console.error("Failed to get temporary language from URL:", error)
 			return null

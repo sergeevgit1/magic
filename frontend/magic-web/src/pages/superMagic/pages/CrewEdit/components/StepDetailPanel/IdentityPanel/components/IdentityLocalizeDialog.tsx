@@ -21,13 +21,14 @@ import {
 	normalizeCrewI18nArrayValue,
 } from "@/apis/modules/crew"
 
-const SUPPORTED_LOCALES = ["en_US", "zh_CN"] as const
+const SUPPORTED_LOCALES = ["en_US", "zh_CN", "ru_RU"] as const
 type SupportedLocale = (typeof SUPPORTED_LOCALES)[number]
 
 interface LocaleFieldDraft {
 	default: string
 	en_US: string
 	zh_CN: string
+	ru_RU: string
 }
 
 interface DraftState {
@@ -43,16 +44,18 @@ function extractI18nText(i18n: CrewI18nText): LocaleFieldDraft {
 		default: i18n.default ?? "",
 		en_US: (i18n.en_US as string | undefined) ?? "",
 		zh_CN: (i18n.zh_CN as string | undefined) ?? "",
+		ru_RU: (i18n.ru_RU as string | undefined) ?? "",
 	}
 }
 
 function extractI18nArrayText(i18n: CrewI18nArrayText): LocaleFieldDraft {
 	const getString = (value: unknown) => normalizeCrewI18nArrayValue(value)
-	const defaultValue = getString(i18n.default) || getString(i18n.en_US) || getString(i18n.zh_CN)
+	const defaultValue = getString(i18n.default) || getString(i18n.ru_RU) || getString(i18n.en_US) || getString(i18n.zh_CN)
 	return {
 		default: defaultValue,
 		en_US: getString(i18n.en_US),
 		zh_CN: getString(i18n.zh_CN),
+		ru_RU: getString(i18n.ru_RU),
 	}
 }
 
@@ -75,9 +78,9 @@ function IdentityLocalizeDialogInner({
 
 	const [activeTab, setActiveTab] = useState<TabField>("name")
 	const [draft, setDraft] = useState<DraftState>({
-		name: { default: "", en_US: "", zh_CN: "" },
-		role: { default: "", en_US: "", zh_CN: "" },
-		description: { default: "", en_US: "", zh_CN: "" },
+		name: { default: "", en_US: "", zh_CN: "", ru_RU: "" },
+		role: { default: "", en_US: "", zh_CN: "", ru_RU: "" },
+		description: { default: "", en_US: "", zh_CN: "", ru_RU: "" },
 	})
 
 	// Sync draft from store whenever dialog opens
@@ -99,6 +102,7 @@ function IdentityLocalizeDialogInner({
 		() => ({
 			en_US: t("playbook.edit.basicInfo.localeDialog.localeLabels.en_US"),
 			zh_CN: t("playbook.edit.basicInfo.localeDialog.localeLabels.zh_CN"),
+			ru_RU: "Русский",
 		}),
 		[t],
 	)
@@ -129,6 +133,7 @@ function IdentityLocalizeDialogInner({
 		}
 		if (draft.name.en_US.trim()) nameI18n.en_US = draft.name.en_US
 		if (draft.name.zh_CN.trim()) nameI18n.zh_CN = draft.name.zh_CN
+		if (draft.name.ru_RU.trim()) nameI18n.ru_RU = draft.name.ru_RU
 
 		// Role i18n is written as string arrays. Reads still normalize legacy
 		// string-shaped payloads for backward compatibility.
@@ -138,6 +143,7 @@ function IdentityLocalizeDialogInner({
 		}
 		if (draft.role.en_US.trim()) roleI18n.en_US = [draft.role.en_US]
 		if (draft.role.zh_CN.trim()) roleI18n.zh_CN = [draft.role.zh_CN]
+		if (draft.role.ru_RU.trim()) roleI18n.ru_RU = [draft.role.ru_RU]
 
 		const descriptionI18n: CrewI18nText = {
 			...prevDescription,
@@ -145,6 +151,7 @@ function IdentityLocalizeDialogInner({
 		}
 		if (draft.description.en_US.trim()) descriptionI18n.en_US = draft.description.en_US
 		if (draft.description.zh_CN.trim()) descriptionI18n.zh_CN = draft.description.zh_CN
+		if (draft.description.ru_RU.trim()) descriptionI18n.ru_RU = draft.description.ru_RU
 
 		void identity.setI18nFields({
 			name_i18n: nameI18n,

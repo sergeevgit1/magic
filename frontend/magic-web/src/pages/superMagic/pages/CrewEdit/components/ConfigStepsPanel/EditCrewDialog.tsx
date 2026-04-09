@@ -27,7 +27,7 @@ import { crewService } from "@/services/crew/CrewService"
 import { useCrewEditStore } from "../../context"
 import { RoleIcon } from "../common/RoleIcon"
 
-const SUPPORTED_LOCALES = ["en_US", "zh_CN"] as const
+const SUPPORTED_LOCALES = ["en_US", "zh_CN", "ru_RU"] as const
 
 type SupportedLocale = (typeof SUPPORTED_LOCALES)[number]
 type LocalizeField = "name" | "role" | "description"
@@ -36,6 +36,7 @@ interface LocaleFieldDraft {
 	default: string
 	en_US: string
 	zh_CN: string
+	ru_RU: string
 }
 
 interface CrewIdentityDraft {
@@ -56,6 +57,7 @@ function createEmptyLocaleFieldDraft(): LocaleFieldDraft {
 		default: "",
 		en_US: "",
 		zh_CN: "",
+		ru_RU: "",
 	}
 }
 
@@ -74,6 +76,7 @@ function extractI18nTextDraft(i18n: CrewI18nText): LocaleFieldDraft {
 		default: i18n.default ?? "",
 		en_US: i18n.en_US ?? "",
 		zh_CN: i18n.zh_CN ?? "",
+		ru_RU: i18n.ru_RU ?? "",
 	}
 }
 
@@ -82,6 +85,7 @@ function extractI18nArrayDraft(i18n: CrewI18nArrayText): LocaleFieldDraft {
 		default: normalizeCrewI18nArrayValue(i18n.default),
 		en_US: normalizeCrewI18nArrayValue(i18n.en_US),
 		zh_CN: normalizeCrewI18nArrayValue(i18n.zh_CN),
+		ru_RU: normalizeCrewI18nArrayValue(i18n.ru_RU),
 	}
 }
 
@@ -111,6 +115,7 @@ function buildTextI18n(draft: LocaleFieldDraft, previousValue: CrewI18nText): Cr
 		default: draft.default,
 		en_US: draft.en_US,
 		zh_CN: draft.zh_CN,
+		ru_RU: draft.ru_RU,
 	}
 }
 
@@ -123,6 +128,7 @@ function buildRoleI18n(
 		default: draft.default.trim() ? [draft.default.trim()] : [],
 		en_US: draft.en_US.trim() ? [draft.en_US.trim()] : [],
 		zh_CN: draft.zh_CN.trim() ? [draft.zh_CN.trim()] : [],
+		ru_RU: draft.ru_RU.trim() ? [draft.ru_RU.trim()] : [],
 	}
 }
 
@@ -153,6 +159,7 @@ function EditCrewLocalizeDialog({
 		() => ({
 			en_US: t("playbook.edit.basicInfo.localeDialog.localeLabels.en_US"),
 			zh_CN: t("playbook.edit.basicInfo.localeDialog.localeLabels.zh_CN"),
+			ru_RU: "Русский",
 		}),
 		[t],
 	)
