@@ -81,10 +81,7 @@ export class ConfigService {
 			if (!rawLanguage) return null
 
 			const normalizedLanguage = normalizeLocale(rawLanguage.trim())
-			if (
-				normalizedLanguage !== SupportLocales.zhCN &&
-				normalizedLanguage !== SupportLocales.enUS
-			) {
+			if (!Object.values(SupportLocales).includes(normalizedLanguage as SupportLocales)) {
 				return null
 			}
 
