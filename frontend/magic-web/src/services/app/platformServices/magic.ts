@@ -320,18 +320,23 @@ export class MagicPlatformService implements PlatformServiceInterface {
 			const routeMeta = routesMatch(window.location.pathname)
 			const isInitChat = routeMeta?.route?.meta?.isShouldInitChat !== false
 
-			if (globalPullSeqId && isInitChat) {
+			if (isInitChat) {
 				this.logger.log("初始化会话服务", {
 					magicId,
 					organizationCode,
+					hasGlobalPullSeqId: Boolean(globalPullSeqId),
 				})
 				await ConversationService.init(targetUser)
 
-				this.logger.log("拉取离线消息")
-				await MessageService.pullOfflineMessages({
-					isHistoryMessage: true,
-					sortCheck: false,
-				})
+				if (globalPullSeqId) {
+					this.logger.log("拉取离线消息")
+					await MessageService.pullOfflineMessages({
+						isHistoryMessage: true,
+						sortCheck: false,
+					})
+				} else {
+					this.logger.warn("缺少 globalPullSeqId，跳过离线消息拉取，但继续初始化会话")
+				}
 			}
 
 			userStore.initialization.markInitialized({
