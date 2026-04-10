@@ -122,6 +122,10 @@ deploy:
       useHostProxy: true
       requireReachability: true
       requireEgress: false
+  kind:
+    # Optional public endpoint used in presigned/download URLs.
+    # Leave empty for local kind-only access via localhost:minioHostPort.
+    publicMinIOEndpoint: ""
 `
 
 func initConfig() {

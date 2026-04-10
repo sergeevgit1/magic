@@ -41,10 +41,11 @@ type KindClusterConfig struct {
 	// ClusterNodeDataHostDir is the host path bind-mounted into the kind node at /data/<Name>. Empty uses ~/.magic/docker/data at runtime.
 	ClusterNodeDataHostDir string `yaml:"clusterNodeDataHostDir"`
 	// RegistryHost is the hostname:port used in containerd registry mirror config (e.g. kind-registry:5000). Empty uses registry.ContainerEndpoint at deploy time.
-	RegistryHost     string `yaml:"registryHost"`
-	MinIOHostPort    int    `yaml:"minioHostPort"`
-	WebHTTPHostPort  int    `yaml:"webHTTPHostPort"`
-	WebHTTPSHostPort int    `yaml:"webHTTPSHostPort"`
+	RegistryHost         string `yaml:"registryHost"`
+	PublicMinIOEndpoint string `yaml:"publicMinIOEndpoint"`
+	MinIOHostPort       int    `yaml:"minioHostPort"`
+	WebHTTPHostPort     int    `yaml:"webHTTPHostPort"`
+	WebHTTPSHostPort    int    `yaml:"webHTTPSHostPort"`
 }
 
 // NormalizeKindCluster fills zero values in k with built-in defaults for name/subnet/image/ports.
