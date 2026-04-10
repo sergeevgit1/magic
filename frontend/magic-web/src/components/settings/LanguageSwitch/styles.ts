@@ -24,6 +24,7 @@ export const useStyles = createStyles(({ css, isDarkMode, token }) => {
 			flex: 1 0 0;
 			overflow: hidden;
 			font-weight: 600;
+			color: ${token.colorText};
 			white-space: nowrap;
 			text-overflow: ellipsis;
 		`,
@@ -31,7 +32,7 @@ export const useStyles = createStyles(({ css, isDarkMode, token }) => {
 			flex: 1 0 0;
 			display: flex;
 			align-items: center;
-			color: ${isDarkMode ? token.magicColorScales.grey[7] : token.magicColorScales.grey[5]};
+			color: ${isDarkMode ? token.colorTextDescription : token.magicColorScales.grey[5]};
 			font-size: 12px;
 			height: 16px;
 		`,

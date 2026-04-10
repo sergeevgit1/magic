@@ -44,7 +44,7 @@ const DepartmentCard = observer(() => {
 
 	function formatPhone(phone?: string, countryCode?: string) {
 		if (!phone) return ""
-		const code = countryCode || userInfo?.country_code || "+86"
+		const code = countryCode || userInfo?.country_code || "+7"
 		return `${code} ${phone}`
 	}
 

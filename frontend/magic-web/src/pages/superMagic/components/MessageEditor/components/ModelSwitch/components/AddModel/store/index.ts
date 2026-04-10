@@ -358,7 +358,12 @@ export class AddModelStore {
 		for (const field of providerType.fields) {
 			if (field.key === "alias") continue
 			const value = this.providerForm.providerFields[field.key]
-			if (value != null) config[normalizeProviderFieldKey(field.key)] = String(value)
+			if (value == null) continue
+			const normalizedKey = normalizeProviderFieldKey(field.key)
+			config[normalizedKey] = String(value)
+			if (normalizedKey === "url") {
+				config.api_url = String(value)
+			}
 		}
 		return config
 	}

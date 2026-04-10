@@ -7,13 +7,11 @@ import libphonenumber from "libphonenumber-js/mobile"
  * @returns libphonenumber object
  */
 export function getLibphonenumber(phone: string, phoneStateCode: string) {
-	// phone must be digits only
-	if (!/^\d+$/.test(phone)) return null
+// phone must be digits only
+if (!/^\d+$/.test(phone)) return null
+if (!phoneStateCode?.startsWith("+")) return null
 
-	return libphonenumber(phoneStateCode + phone, {
-		defaultCountry: "CN",
-		defaultCallingCode: "86",
-	})
+return libphonenumber(`${phoneStateCode}${phone}`)
 }
 
 /**
@@ -31,32 +29,26 @@ export function getLibphonenumber(phone: string, phoneStateCode: string) {
  * @returns Encrypted phone number
  */
 export function encryptPhoneWithCountryCode(
-	phone: string,
-	phoneStateCode: string = "+86",
-	symbol: string = "*",
+phone: string,
+phoneStateCode: string,
+symbol: string = "*",
 ): string {
-	if (!phone) return phone
+if (!phone) return phone
 
-	const match = getLibphonenumber(phone, phoneStateCode)
-	if (!match?.isValid()) return phone // Invalid phone number, return as is
+const match = getLibphonenumber(phone, phoneStateCode)
+if (!match?.isValid()) return phone
 
-	const countryCode = match.countryCallingCode
-	const localNumber = match.nationalNumber
+const countryCode = match.countryCallingCode
+const localNumber = match.nationalNumber
 
-	// Chinese mainland number encryption: first 3, last 4
-	if (countryCode === "86") {
-		if (localNumber.length < 7) return phone // Cannot encrypt
-		return `+${countryCode} ${localNumber.slice(0, 3)}${symbol.repeat(4)}${localNumber.slice(
-			-4,
-		)}`
-	}
+if (countryCode === "86") {
+if (localNumber.length < 7) return phone
+return `+${countryCode} ${localNumber.slice(0, 3)}${symbol.repeat(4)}${localNumber.slice(-4)}`
+}
 
-	// Other countries encryption: first 2, last 2, mask middle max(half length, 2)
-	if (localNumber.length < 4) return phone // Cannot encrypt
-	const maskLength = Math.max(Math.floor(localNumber.length / 2), 2)
-	return `+${countryCode} ${localNumber.slice(0, 2)}${symbol.repeat(
-		maskLength,
-	)}${localNumber.slice(-2)}`
+if (localNumber.length < 4) return phone
+const maskLength = Math.max(Math.floor(localNumber.length / 2), 2)
+return `+${countryCode} ${localNumber.slice(0, 2)}${symbol.repeat(maskLength)}${localNumber.slice(-2)}`
 }
 
 /**
@@ -67,10 +59,8 @@ export function encryptPhoneWithCountryCode(
  * @returns Whether valid
  */
 export function validatePhone(phone: string, phoneStateCode: string): boolean {
-	if (!phone) return false
+if (!phone) return false
+if (!/^\d+$/.test(phone)) return false
 
-	// phone must be digits only
-	if (!/^\d+$/.test(phone)) return false
-
-	return getLibphonenumber(phone, phoneStateCode)?.isValid() ?? false
+return getLibphonenumber(phone, phoneStateCode)?.isValid() ?? false
 }
