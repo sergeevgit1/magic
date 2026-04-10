@@ -21,7 +21,7 @@ function ProjectItem({
 	return (
 		<div
 			className={cn(
-				"flex cursor-pointer items-center gap-2 rounded-lg border border-border bg-white py-1 pl-1 pr-2 transition-colors",
+				"flex cursor-pointer items-center gap-2 rounded-lg border border-border bg-card text-card-foreground py-1 pl-1 pr-2 shadow-xs transition-colors hover:bg-accent/30",
 				"active:bg-accent",
 				"transition-transform",
 				"active:scale-[0.98]",

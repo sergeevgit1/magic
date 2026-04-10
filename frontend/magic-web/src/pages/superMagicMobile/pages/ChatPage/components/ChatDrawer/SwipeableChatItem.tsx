@@ -46,8 +46,8 @@ export default function SwipeableChatItem({
 	] = [
 			{
 				label: t("common.moreActions"),
-				icon: <Ellipsis size={16} className="text-white" />,
-				bgClassName: "bg-[#9ca3af]",
+				icon: <Ellipsis size={16} className="text-primary-foreground" />,
+				bgClassName: "bg-slate-600",
 				labelClassName: "text-white",
 				onClick: handleMore,
 			},
@@ -76,7 +76,7 @@ export default function SwipeableChatItem({
 			{/* 主内容层 */}
 			<div
 				className={cn(
-					"relative z-10 flex w-full items-center gap-2 bg-background px-3 py-2.5",
+					"relative z-10 flex w-full items-center gap-2 bg-background px-3 py-2.5 text-foreground transition-colors hover:bg-accent/20 active:bg-accent/30",
 				)}
 				style={{
 					transform: `translateX(${offsetX}px)`,
@@ -88,7 +88,7 @@ export default function SwipeableChatItem({
 				onTouchEnd={touchHandlers.onTouchEnd}
 			>
 				{/* 图标容器 */}
-				<div className="flex size-9 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-foreground">
+				<div className="flex size-9 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-primary text-primary-foreground shadow-xs">
 					<MessageCircle size={24} className="text-white" />
 				</div>
 
@@ -97,7 +97,7 @@ export default function SwipeableChatItem({
 					<div className="overflow-hidden text-ellipsis whitespace-nowrap text-sm font-medium leading-5 text-foreground">
 						{item.title}
 					</div>
-					<div className="overflow-hidden text-ellipsis whitespace-nowrap text-xs font-light leading-4 text-muted-foreground">
+					<div className="overflow-hidden text-ellipsis whitespace-nowrap text-xs font-light leading-4 text-muted-foreground dark:text-muted-foreground/90">
 						{item.subtitle}
 					</div>
 				</div>

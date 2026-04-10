@@ -71,7 +71,7 @@ function EditProviderDialog() {
 
 				<div className="scrollbar-y-thin flex max-h-[60vh] flex-col gap-2.5 overflow-y-auto p-4">
 					{/* Read-only provider icon + name */}
-					<div className="flex items-center gap-3 rounded-lg">
+					<div className="flex items-center gap-3 rounded-lg bg-card/60 px-2 py-2 text-card-foreground">
 						<div className="flex size-8 shrink-0 items-center justify-center overflow-hidden rounded">
 							<ProviderTypeIcon
 								providerTypeId={provider.providerTypeId}

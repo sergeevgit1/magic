@@ -95,7 +95,7 @@ function WorkspaceItemMobile({
 	return (
 		<div className="flex w-full flex-col">
 			{/* Workspace 行 */}
-			<div className="flex w-full items-center gap-2 px-4 py-2.5">
+			<div className="flex w-full items-center gap-2 px-4 py-2.5 text-foreground transition-colors hover:bg-accent/15">
 				{/* 可点击区域：箭头 + 图标 + 名称 */}
 				<div
 					className="flex min-w-0 flex-1 cursor-pointer items-center gap-2"
@@ -109,8 +109,8 @@ function WorkspaceItemMobile({
 							)}
 						/>
 					</div>
-					<div className="flex size-6 shrink-0 items-center justify-center rounded-md bg-foreground">
-						<Box className="size-4 text-background" />
+					<div className="flex size-6 shrink-0 items-center justify-center rounded-md bg-primary text-primary-foreground shadow-xs">
+						<Box className="size-4 text-primary-foreground" />
 					</div>
 					<div className="min-w-0 flex-1 truncate text-sm text-foreground">
 						{workspace.name || t("super:workspace.unnamedWorkspace")}
@@ -138,7 +138,7 @@ function WorkspaceItemMobile({
 			{isExpanded && (
 				<div className="flex w-full flex-col">
 					{isLoading ? (
-						<div className="flex items-center justify-center py-8 text-xs text-muted-foreground">
+						<div className="flex items-center justify-center py-8 text-xs text-muted-foreground dark:text-muted-foreground/90">
 							{t("common.loading")}
 						</div>
 					) : projects.length > 0 ? (
@@ -159,7 +159,7 @@ function WorkspaceItemMobile({
 							/>
 						))
 					) : (
-						<div className="flex items-center justify-center py-4 text-xs text-muted-foreground">
+						<div className="flex items-center justify-center py-4 text-xs text-muted-foreground dark:text-muted-foreground/90">
 							{t("project.noProjects")}
 						</div>
 					)}

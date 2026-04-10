@@ -28,7 +28,7 @@ export default function ChatPageHeader({ onMenuClick }: ChatPageHeaderProps) {
 	}
 
 	return (
-		<div className="w-full shrink-0 rounded-b-xl bg-background px-2.5 pt-safe-top shadow-xs">
+		<div className="w-full shrink-0 rounded-b-xl border-b border-border bg-background/95 px-2.5 pt-safe-top text-foreground shadow-sm backdrop-blur-sm">
 			<div className="flex h-12 w-full items-center gap-2">
 				{globalConfig?.minimal_logo && (
 					<img
@@ -54,7 +54,7 @@ export default function ChatPageHeader({ onMenuClick }: ChatPageHeaderProps) {
 						aria-label={t("crewMarket.title")}
 						data-testid="chat-page-header-crew-market-button"
 					>
-						<Bot size={20} />
+						<Bot size={20} className="text-foreground" />
 					</button>
 					<button
 						type="button"
@@ -63,7 +63,7 @@ export default function ChatPageHeader({ onMenuClick }: ChatPageHeaderProps) {
 						aria-label={t("skillsLibrary.title")}
 						data-testid="chat-page-header-skills-library-button"
 					>
-						<Skills size={20} />
+						<Skills size={20} className="text-foreground" />
 					</button>
 					<button
 						type="button"
@@ -72,7 +72,7 @@ export default function ChatPageHeader({ onMenuClick }: ChatPageHeaderProps) {
 						aria-label={t("appsMenu.more")}
 						data-testid="chat-page-header-more-button"
 					>
-						<Menu size={20} />
+						<Menu size={20} className="text-foreground" />
 					</button>
 					<button
 						type="button"
@@ -81,7 +81,7 @@ export default function ChatPageHeader({ onMenuClick }: ChatPageHeaderProps) {
 						aria-label={t("footer.recycleBin")}
 						data-testid="chat-page-header-recycle-bin-button"
 					>
-						<Trash size={20} />
+						<Trash size={20} className="text-foreground" />
 					</button>
 				</div>
 			</div>

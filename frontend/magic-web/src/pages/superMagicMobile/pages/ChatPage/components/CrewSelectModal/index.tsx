@@ -94,7 +94,7 @@ export default function CrewSelectModal({
 				{/* Tab 切换器（Official / My） */}
 				<div className="w-[200px] px-4 pb-3">
 					<Tabs value={activeTab} onValueChange={handleTabChange}>
-						<TabsList className="w-full rounded-[10px]">
+						<TabsList className="w-full rounded-[10px] bg-muted/80">
 							<TabsTrigger value={TabType.Official} className="font-medium">
 								{t("crewSelectModal.tab.official")}
 							</TabsTrigger>

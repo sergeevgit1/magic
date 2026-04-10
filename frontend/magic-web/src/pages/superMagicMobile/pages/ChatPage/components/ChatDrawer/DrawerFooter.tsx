@@ -31,7 +31,7 @@ function DrawerFooter({
 			<div className="flex flex-col gap-2">
 				<Button
 					variant="outline"
-					className="h-9 w-full gap-2 rounded-lg bg-white shadow-xs"
+					className="h-9 w-full gap-2 rounded-lg border-border bg-card text-card-foreground shadow-xs hover:bg-accent/30"
 					onClick={onSharedWorkspace}
 				>
 					<UsersRound size={16} />

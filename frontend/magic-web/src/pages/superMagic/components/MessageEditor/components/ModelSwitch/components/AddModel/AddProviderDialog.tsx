@@ -68,9 +68,9 @@ const ProviderItem = observer(function ProviderItem({
 	return (
 		<div
 			className={cn(
-				"flex cursor-pointer flex-col gap-3 rounded-lg border px-2 py-2",
+				"flex cursor-pointer flex-col gap-3 rounded-lg border bg-card/70 px-2 py-2 text-card-foreground",
 				"transition-colors",
-				isSelected ? "border-primary" : "border-border",
+				isSelected ? "border-primary bg-accent/40" : "border-border hover:bg-accent/20",
 			)}
 			onClick={onSelect}
 			data-testid={`add-provider-item-${provider.id}`}

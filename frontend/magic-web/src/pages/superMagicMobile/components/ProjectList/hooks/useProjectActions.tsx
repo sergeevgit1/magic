@@ -240,7 +240,7 @@ export function useProjectListActions() {
 						{t("hierarchicalWorkspacePopup.newName")}
 					</div>
 					<Input
-						className="bg-white"
+						className="bg-background text-foreground dark:bg-input/30"
 						placeholder={t("hierarchicalWorkspacePopup.inputProjectName")}
 						value={currentActionItem?.project_name}
 						onChange={(e) => {

@@ -70,7 +70,7 @@ function RenameModal({
 	const renderInputContent = () => (
 		<ShadcnInput
 			ref={inputRef}
-			className="bg-white"
+			className="bg-background text-foreground dark:bg-input/30"
 			value={getValue()}
 			onChange={(e) => onInputChange(e.target.value)}
 			onKeyDown={handleKeyDown}

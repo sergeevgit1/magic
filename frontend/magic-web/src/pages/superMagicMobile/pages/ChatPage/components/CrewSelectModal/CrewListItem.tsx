@@ -42,7 +42,7 @@ export default function CrewListItem({ crew, isActive, onClick }: CrewListItemPr
 			data-testid={`crew-select-modal-crew-item-${crewIdentifier}`}
 			aria-label={crewName}
 			aria-pressed={isActive}
-			className="flex w-full cursor-pointer items-start gap-2.5 overflow-hidden rounded-md border border-border bg-card p-2.5 text-left active:opacity-70"
+			className="flex w-full cursor-pointer items-start gap-2.5 overflow-hidden rounded-md border border-border bg-card/95 p-2.5 text-left text-card-foreground shadow-xs transition-colors hover:bg-accent/25 active:opacity-70"
 			onClick={() => onClick(crew)}
 		>
 			{/* 圆形头像容器 */}
@@ -67,11 +67,11 @@ export default function CrewListItem({ crew, isActive, onClick }: CrewListItemPr
 						data-testid={`crew-select-modal-crew-checkmark-${crewIdentifier}`}
 						className={cn(
 							"flex size-4 shrink-0 items-center justify-center rounded-[4px]",
-							isActive && "border border-foreground bg-foreground shadow-xs",
+							isActive && "border border-primary bg-primary shadow-xs",
 						)}
 					>
 						{isActive && (
-							<Check size={10} className="text-background" strokeWidth={3} />
+							<Check size={10} className="text-primary-foreground" strokeWidth={3} />
 						)}
 					</div>
 				</div>

@@ -81,7 +81,7 @@ function WorkspaceSelect(props: WorkspaceSelectProps, ref: Ref<WorkspaceSelectRe
 		<>
 			<div
 				className={cn(
-					"flex h-8 items-center gap-1.5 rounded-lg border border-border bg-white px-1",
+					"flex h-8 items-center gap-1.5 rounded-lg border border-border bg-card px-1 text-card-foreground shadow-xs",
 					"cursor-pointer overflow-hidden transition-colors active:bg-muted",
 				)}
 				onClick={() => hierarchicalWorkspacePopupRef.current?.show()}

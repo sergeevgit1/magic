@@ -267,7 +267,7 @@ const ChatDrawer = observer(({ open, onClose, hierarchicalWorkspacePopupRef }: C
 			<Sheet open={open} onOpenChange={onClose}>
 				<SheetContent
 					side="right"
-					className="z-drawer w-80 gap-0 px-0 !pb-safe-bottom pt-safe-top"
+					className="z-drawer w-80 gap-0 border-border bg-background px-0 text-foreground !pb-safe-bottom pt-safe-top"
 					showClose={false}
 					overlayClassName="z-drawer backdrop-blur-sm"
 				>
@@ -296,7 +296,7 @@ const ChatDrawer = observer(({ open, onClose, hierarchicalWorkspacePopupRef }: C
 
 					{/* 主内容区域：onClickCapture 在捕获阶段拦截点击，收起左滑操作按钮 */}
 					<div
-						className="flex min-h-0 flex-1 flex-col overflow-y-auto"
+						className="flex min-h-0 flex-1 flex-col overflow-y-auto bg-background"
 						onClickCapture={handleContentClickCapture}
 					>
 						{activeTab === ChatDrawerTab.Chats &&
@@ -344,7 +344,7 @@ const ChatDrawer = observer(({ open, onClose, hierarchicalWorkspacePopupRef }: C
 					</div>
 
 					{/* 底部按钮区域 */}
-					<div className="shrink-0 p-3 pb-safe-bottom">
+					<div className="shrink-0 border-t border-border bg-background/95 p-3 pb-safe-bottom backdrop-blur-sm">
 						<DrawerFooter
 							activeTab={activeTab}
 							onNewChat={handleNewChat}

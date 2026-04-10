@@ -95,7 +95,7 @@ const ChatPage = observer(() => {
 
 	return (
 		<>
-			<div className="flex size-full flex-col items-start bg-sidebar pb-safe-bottom-with-tabbar">
+			<div className="flex size-full flex-col items-start bg-sidebar text-foreground pb-safe-bottom-with-tabbar">
 				{/* 头部 */}
 				<ChatPageHeader onMenuClick={() => setDrawerOpen(true)} />
 
@@ -103,7 +103,7 @@ const ChatPage = observer(() => {
 				<div className="relative flex min-h-0 w-full min-w-0 flex-1 flex-col items-center justify-center overflow-hidden py-20">
 					<button
 						type="button"
-						className="absolute left-2.5 top-2.5 z-10 flex h-8 max-w-[calc(100%-20px)] items-center gap-2 rounded-md border border-input bg-background px-3 text-sm font-medium text-foreground shadow-xs transition-colors hover:bg-accent active:bg-accent/80"
+						className="absolute left-2.5 top-2.5 z-10 flex h-8 max-w-[calc(100%-20px)] items-center gap-2 rounded-md border border-input bg-card/95 px-3 text-sm font-medium text-card-foreground shadow-sm backdrop-blur-sm transition-colors hover:bg-accent active:bg-accent/80"
 						onClick={() => setDrawerOpen(true)}
 						aria-label={`${t("super:workspace.workspaces")} / ${displayWorkspaceName}`}
 						data-testid="chat-page-workspace-button"

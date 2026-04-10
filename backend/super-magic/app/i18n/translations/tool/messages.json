@@ -989,19 +989,23 @@
     },
     "task.completed": {
         "zh_CN": "任务完成",
-        "en_US": "Task completed"
+        "en_US": "Task completed",
+        "ru_RU": "Задача завершена"
     },
     "task_vm_init.start": {
         "zh_CN": "虚拟机正在初始化",
-        "en_US": "Virtual machine is initializing"
+        "en_US": "Virtual machine is initializing",
+        "ru_RU": "Виртуальная машина инициализируется"
     },
     "task_vm_init.success": {
         "zh_CN": "虚拟机初始化完成",
-        "en_US": "Virtual machine initialization completed"
+        "en_US": "Virtual machine initialization completed",
+        "ru_RU": "Инициализация виртуальной машины завершена"
     },
     "task_vm_init.failed": {
         "zh_CN": "虚拟机初始化失败",
-        "en_US": "Virtual machine initialization failed"
+        "en_US": "Virtual machine initialization failed",
+        "ru_RU": "Не удалось инициализировать виртуальную машину"
     },
     "mcp_init.start": {
         "zh_CN": "MCP 初始化开始: {{content}}",

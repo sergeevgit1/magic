@@ -57,7 +57,7 @@ export default function BottomInputBar({
 			{editorNodes?.messageQueueNode}
 			<div
 				className={cn(
-					"flex items-center gap-1 rounded-3xl border border-border bg-background p-1 shadow-xs",
+					"flex items-center gap-1 rounded-3xl border border-border bg-card/95 p-1 text-card-foreground shadow-sm backdrop-blur-sm",
 					!showModeSelector && "h-[40px] pl-4",
 					isTaskRunning && "pr-2",
 				)}
@@ -78,7 +78,7 @@ export default function BottomInputBar({
 					/>
 					{/* 内容为空时的占位文本 */}
 					{isEmpty && (
-						<div className="pointer-events-none absolute inset-0 flex items-center truncate font-['Geist'] text-sm text-muted-foreground">
+						<div className="pointer-events-none absolute inset-0 flex items-center truncate font-['Geist'] text-sm text-muted-foreground dark:text-muted-foreground/90">
 							{t("chatInput.mobilePlaceholder")}
 						</div>
 					)}

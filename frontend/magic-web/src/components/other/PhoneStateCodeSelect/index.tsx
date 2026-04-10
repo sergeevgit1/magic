@@ -37,7 +37,11 @@ return (
 options={phoneOptions}
 value={value}
 onChange={onChange}
-className={cn("h-9 rounded-md border border-input bg-white", className)}
+className={cn(
+				"h-9 rounded-md border border-input bg-background text-foreground shadow-xs",
+				"hover:bg-accent/40 dark:bg-input/30 dark:hover:bg-input/50",
+				className,
+			)}
 style={{ width: "75px" }}
 styles={{
 popup: {
@@ -45,9 +49,9 @@ root: { minWidth: "fit-content" },
 },
 }}
 onClick={(e) => e.stopPropagation()}
-labelRender={(option) => <div className="text-sm">{option.value}</div>}
+labelRender={(option) => <div className="text-sm text-foreground">{option.value}</div>}
 optionRender={(option) => (
-<div key={option.value} className="text-sm">
+<div key={option.value} className="text-sm text-foreground">
 {option.label} ({option.value})
 </div>
 )}

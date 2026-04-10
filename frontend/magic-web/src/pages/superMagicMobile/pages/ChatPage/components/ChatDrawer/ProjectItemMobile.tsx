@@ -139,7 +139,7 @@ export default function ProjectItemMobile({
 			{
 				label: t("common.moreActions"),
 				icon: <Ellipsis size={16} className="text-white" />,
-				bgClassName: "bg-[#9ca3af]",
+				bgClassName: "bg-slate-600",
 				labelClassName: "text-white",
 				onClick: handleMore,
 			},
@@ -171,7 +171,7 @@ export default function ProjectItemMobile({
 			{/* 主内容层 */}
 			<div
 				className={cn(
-					"relative z-10 flex w-full cursor-pointer items-center gap-2 bg-background px-4 py-2.5",
+					"relative z-10 flex w-full cursor-pointer items-center gap-2 bg-background px-4 py-2.5 text-foreground transition-colors hover:bg-accent/20 active:bg-accent/30",
 				)}
 				style={{
 					transform: `translateX(${offsetX}px)`,
@@ -204,7 +204,7 @@ export default function ProjectItemMobile({
 					</div>
 
 					{/* 第二行：更新时间 */}
-					<div className="truncate text-xs font-light text-muted-foreground">
+					<div className="truncate text-xs font-light text-muted-foreground dark:text-muted-foreground/90">
 						{timeRender}
 					</div>
 				</div>

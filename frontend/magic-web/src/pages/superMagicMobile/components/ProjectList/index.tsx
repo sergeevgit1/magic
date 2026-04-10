@@ -69,7 +69,7 @@ const ProjectList = observer(() => {
 		<MagicPullToRefresh onRefresh={handleRefreshProjects} showSuccessMessage={false}>
 			<div className="flex flex-col gap-2">
 				<div
-					className="flex cursor-pointer items-center justify-between gap-2 rounded-lg border border-border bg-white px-2 py-1 pl-1 transition-opacity active:opacity-80"
+					className="flex cursor-pointer items-center justify-between gap-2 rounded-lg border border-border bg-card px-2 py-1 pl-1 text-card-foreground shadow-xs transition-colors hover:bg-accent/30 active:opacity-80"
 					onClick={handleCreateProjectDebounced}
 				>
 					<div className="flex h-10 w-10 items-center justify-center">

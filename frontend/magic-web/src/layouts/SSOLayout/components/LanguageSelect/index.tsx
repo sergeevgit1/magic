@@ -20,10 +20,13 @@ function LanguageSelect() {
 	return (
 		<MagicSelect
 			prefix={
-				<MagicIcon component={IconWorld} size={20} color={isDarkMode ? "#fff" : "#000"} />
+				<MagicIcon component={IconWorld} size={20} color={isDarkMode ? "#f5f5f5" : "#111827"} />
 			}
 			value={lang}
-			className={cn("w-fit rounded-full bg-white px-2 py-[5px] dark:bg-fill-secondary")}
+			className={cn(
+				"w-fit rounded-full border border-border bg-background/90 px-2 py-[5px] text-foreground shadow-sm backdrop-blur-sm",
+				"hover:bg-accent/60 dark:bg-background/80 dark:hover:bg-accent/50",
+			)}
 			options={options}
 			variant="borderless"
 			placement="bottomRight"

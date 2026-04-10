@@ -220,7 +220,7 @@ export default function Step2Provider({
 												type="button"
 												onClick={() => handleProviderChange(provider.value)}
 												className={cn(
-													"flex flex-col items-center justify-center rounded-lg border-2 p-3 transition-all hover:border-foreground",
+													"flex flex-col items-center justify-center rounded-lg border-2 p-3 text-foreground transition-all hover:border-foreground hover:bg-accent/60",
 													field.value === provider.value
 														? "border-foreground bg-accent"
 														: "border-border bg-background",
