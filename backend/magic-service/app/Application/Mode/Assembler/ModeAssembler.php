@@ -130,8 +130,8 @@ class ModeAssembler
         $array = $modeEntity->toArray();
         unset($array['name_i18n'], $array['placeholder_i18n']);
         $modeDTO = new ModeDTO($array);
-        $modeDTO->setName($modeEntity->getNameI18n()[$locale]);
-        $modeDTO->setPlaceholder($modeEntity->getPlaceholderI18n()[$locale] ?? '');
+        $modeDTO->setName(self::resolveI18nText($modeEntity->getNameI18n(), $locale));
+        $modeDTO->setPlaceholder(self::resolveI18nText($modeEntity->getPlaceholderI18n(), $locale));
         return $modeDTO;
     }
 
@@ -148,7 +148,7 @@ class ModeAssembler
             $modeGroupEntity = $groupAggregate->getGroup();
             $modeGroupDetailDTO = new ModeGroupDetailDTO($modeGroupEntity->toArray());
             $locale = di(TranslatorInterface::class)->getLocale();
-            $modeGroupDetailDTO->setName($modeGroupEntity->getNameI18n()[$locale]);
+            $modeGroupDetailDTO->setName(self::resolveI18nText($modeGroupEntity->getNameI18n(), $locale));
 
             // 设置模型信息
             $models = [];
@@ -194,7 +194,34 @@ class ModeAssembler
     {
         $dto = new ModeGroupDTO($getGroup->toArray());
         $locale = di(TranslatorInterface::class)->getLocale();
-        $dto->setName($getGroup->getNameI18n()[$locale]);
+        $dto->setName(self::resolveI18nText($getGroup->getNameI18n(), $locale));
         return $dto;
+    }
+
+    private static function resolveI18nText(array $translations, string $locale): string
+    {
+        if (! empty($translations[$locale] ?? '')) {
+            return $translations[$locale];
+        }
+
+        if (! empty($translations['ru_RU'] ?? '')) {
+            return $translations['ru_RU'];
+        }
+
+        if (! empty($translations['en_US'] ?? '')) {
+            return $translations['en_US'];
+        }
+
+        if (! empty($translations['zh_CN'] ?? '')) {
+            return $translations['zh_CN'];
+        }
+
+        foreach ($translations as $value) {
+            if (is_string($value) && $value !== '') {
+                return $value;
+            }
+        }
+
+        return '';
     }
 }
