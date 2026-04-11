@@ -48,6 +48,8 @@ export class LoginService {
 			values.device = await getDeviceInfo(configStore.i18n.i18n.instance)
 
 			switch (type) {
+				case Login.LoginType.EmailPassword:
+					return this.userApi.login(type, values as Login.EmailPasswordFormValues)
 				case Login.LoginType.MobilePhonePassword:
 					return this.userApi.login(type, values as Login.MobilePhonePasswordFormValues)
 				case Login.LoginType.SMSVerificationCode:
@@ -92,6 +94,8 @@ export class LoginService {
 		// PS: 改到在无组织下创建组织的时候再消费邀请码
 		// values.invite_code = consumeInvitationCookie()
 		switch (type) {
+			case Login.LoginType.EmailPassword:
+				return this.userApi.login(type, values as Login.EmailPasswordFormValues)
 			case Login.LoginType.MobilePhonePassword:
 				return this.userApi.login(type, values as Login.MobilePhonePasswordFormValues)
 			case Login.LoginType.SMSVerificationCode:
@@ -381,3 +385,8 @@ export class LoginService {
 		return this.userApi.verifyImageCaptcha(data)
 	}
 }
+
+
+	async registerByEmail(email: string, password: string, organizationCode?: string) {
+		return this.userApi.registerByEmail(email, password, organizationCode)
+	}

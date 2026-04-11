@@ -34,6 +34,8 @@ export namespace Login {
 		SMSVerificationCode = "phone_captcha",
 		/** 邮箱验证码登录 */
 		EmailVerificationCode = "email",
+		/** 邮箱+密码登录 */
+		EmailPassword = "email_password",
 		/** 手机号+密码登录 */
 		MobilePhonePassword = "phone_password",
 		/** 账号密码登录 */
@@ -121,6 +123,15 @@ export namespace Login {
 		phone: string
 		/** 国家区号 */
 		state_code: string
+		/** 密码 */
+		password: string
+	}
+
+	/** 邮箱+密码 */
+	export interface EmailPasswordFormValues extends LoginFormCommonValues {
+		type: Login.LoginType
+		/** 邮箱 */
+		email: string
 		/** 密码 */
 		password: string
 	}

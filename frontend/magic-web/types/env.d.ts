@@ -54,6 +54,8 @@ interface ImportMetaEnv {
 	readonly MAGIC_DINGTALK_REDIRECT_URI?: string
 	/** 私有化部署中第三方登录配置 */
 	readonly MAGIC_PRIVATE_DEPLOYMENT_CONFIG?: string
+	/** 是否开启邮箱验证码注册/找回 */
+	readonly MAGIC_EMAIL_VERIFICATION_ENABLED?: "true" | "false"
 	/** 公共 CDN 地址 */
 	readonly MAGIC_PUBLIC_CDN_URL?: string
 	/** CDN 资源地址 */

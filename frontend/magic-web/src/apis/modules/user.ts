@@ -96,6 +96,14 @@ export const generateUserApi = (fetch: HttpClient) => ({
 		})
 	},
 
+	registerByEmail(email: string, password: string, organization_code?: string) {
+		return fetch.post<{ success: boolean; email: string; magic_id: string; organization_code: string }>(
+			"/api/v1/sessions/register",
+			{ email, password, organization_code },
+			{ enableRequestUnion: true, enableAuthorization: false },
+		)
+	},
+
 	/**
 	 * @description 登出
 	 * @param {{ device: Common.DeviceInfo }} data 登录设备
